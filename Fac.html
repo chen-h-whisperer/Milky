@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>设施设备</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/Milky/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Milky/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Milky/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/Milky/images/favicon/site.webmanifest">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CRubik:400,400i,500,700,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/Milky/css/animate.css">
+    <link rel="stylesheet" href="/Milky/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Milky/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="/Milky/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="/Milky/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/Milky/css/hover-min.css">
+    <link rel="stylesheet" href="/Milky/css/magnific-popup.css">
+    <link rel="stylesheet" href="/Milky/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/Milky/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/Milky/plugins/indext-icons/style.css">
+    <link rel="stylesheet" href="/Milky/css/nouislider.css">
+    <link rel="stylesheet" href="/Milky/css/jquery.bootstrap-touchspin.min.css">
+
+    <link rel="stylesheet" href="/Milky/css/style.css">
+    <link rel="stylesheet" href="/Milky/css/responsive.css">
+    <style>
+        
+        .project-one__single {
+            width: 100%;
+        }
+
+        /* 实验室网格样式 */
+        .c_1 {
+            margin: 0 20%;
+            max-width: 1200px;
+        }
+
+        .lab-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .lab-card {
+            background: #f9f9f9;
+            border-radius: 6px;
+            padding: 15px;
+            border-left: 4px solid #c00;
+        }
+
+        .lab-card h4 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #c00;
+        }
+
+        .lab-card ul {
+            list-style: none;
+        }
+
+        .lab-card li {
+            padding: 5px 0;
+            border-bottom: 1px dashed #e0e0e0;
+            position: relative;
+            padding-left: 15px;
+        }
+
+        .lab-card li:before {
+            content: '•';
+            color: #c00;
+            position: absolute;
+            left: 0;
+        }
+
+        .lab-card li:last-child {
+            border-bottom: none;
+        }
+
+        /* 表格样式 */
+        /* .table-container {
+                padding: 20px;
+            } */
+
+        .tech-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .tech-table th {
+            background: #c00;
+            color: white;
+            padding: 12px 15px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        .tech-table td {
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        .tech-table tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+
+        .tech-table tr:hover {
+            background: #f0f0f0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="preloader"><span></span></div><!-- /.preloader -->
+    <div class="page-wrapper">
+        <header class="site-header site-header__header-one ">
+            <nav class="navbar navbar-expand-lg navbar-light header-navigation stricky">
+                <!-- 头部导航栏 -->
+                <div class="container clearfix">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="logo-box">
+                        <a class="navbar-brand" href="/Milky/index.html">
+                            <img src="/Milky/images/logo.png" width="185" class="main-logo" alt="Awesome Image" />
+                        </a>
+                        <button class="menu-toggler" data-target=".main-navigation">
+                            <span class="fa fa-bars"></span>
+                        </button>
+                    </div><!-- /.logo-box -->
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="main-navigation">
+                        <ul class=" navigation-box @@extra_class">
+                            <li>
+                                <a href="/Milky/index.html">首页</a>
+                            </li>
+                            <li class="current">
+                                <a href="/Milky/Fac.html">设施设备</a>
+                            </li>
+
+                            <li>
+                                <a href="/Milky/Honor.html">荣誉成就</a>
+                            </li>
+                            <li>
+                                <a href="/Milky/Business.html">经营销售</a>
+                            </li>
+                            <li>
+                                <a href="/Milky/P&T.html">商品&技术</a>
+                            </li>
+                            <li>
+                                <a href="/Milky/Abount.html">关于我们</a>
+                            </li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container -->
+            </nav>
+        </header><!-- /.site-header -->
+        <section class="inner-banner">
+            <div class="container">
+                <h2 class="inner-banner__title">设施设备</h2><!-- /.inner-banner__title -->
+            </div><!-- /.container -->
+        </section><!-- /.inner-banner -->
+        <section class="project-one project-one__home-two">
+            <div class="container-fluid">
+                <div class="block-title" style="text-align: center;">
+                    <h3 class="block-title__title">智能设备展示 <br>
+                        <h2>福建闽威科技拥有先进的制造设备和标准化实验室，确保产品质量达到国际标准</h2>
+                        <br>
+                        <!-- /.block-title__base -->
+                        <!-- /.block-title__bold -->
+                    </h3><!-- /.block-title__title -->
+                </div><!-- /.block-title -->
+                <div class="project-two__carousel owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片1.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">内层涂布线</a></h2><!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片2.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">内层LDI曝光连线</a></h2>
+                                <!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片7.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">OPE+棕化线</a></h2><!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片8.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">回流线+压机组</a></h2><!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片9.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">镭射钻孔机</a></h2><!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片10.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">机械钻孔机</a></h2><!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片11.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">水平PTH线</a></h2><!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片12.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">全板镀VCP线</a></h2><!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片13.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">外层LDI曝光连线</a></h2>
+                                <!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片14.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">真空蚀刻+在线AOI</a></h2>
+                                <!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片15.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">阻焊LED曝光自动线</a></h2>
+                                <!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片16.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">阻焊DI曝光机</a></h2><!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片22.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">镭射检修机</a></h2><!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片23.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">填空VCP线</a></h2><!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片25.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">阻焊AVI机</a></h2><!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片26.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">文字喷墨连线</a></h2><!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片27.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">成型机</a></h2><!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片28.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">自动V-Cut机</a></h2>
+                                <!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片29.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">八倍密通用测试机</a></h2>
+                                <!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片30.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">十二倍密通用测试机</a></h2>
+                                <!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片31.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">OSP线</a></h2><!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片32.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">化锡线</a></h2><!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片33.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">外观检查机</a></h2><!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片34.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">二维码刻码机</a></h2><!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                </div><!-- /.project-one__carousel owl-carousel owl-theme -->
+            </div><!-- /.container -->
+        </section><!-- /.project-one -->
+        <!-- 标准化实验室 -->
+        <section>
+            <div class="c_1">
+                <div class="section-header">
+                    <div class="block-title" style="text-align: center;">
+                        <h3 class="block-title__title" style="text-align: center;">标准化实验室<br>
+                            <h2 style="text-align: center;">福建闽威科技拥有完善的标准化实验室，配备先进的检测设备，确保产品质量符合国际标准。</h2>
+                            <br>
+                            <!-- /.block-title__base -->
+                            <!-- /.block-title__bold -->
+                        </h3><!-- /.block-title__title -->
+                    </div><!-- /.block-title -->
+                </div>
+                <div class="lab-grid">
+                    <div class="lab-card">
+                        <h4>电学室</h4>
+                        <ul>
+                            <li>矢量网络分析仪</li>
+                            <li>金相显微镜</li>
+                            <li>电子天平</li>
+                            <li>耐压绝缘测试仪</li>
+                            <li>剥离强度测试机</li>
+                            <li>镀层测量仪</li>
+                        </ul>
+                    </div>
+
+                    <div class="lab-card">
+                        <h4>环境室</h4>
+                        <ul>
+                            <li>冷热冲击试验箱</li>
+                            <li>恒温恒湿试验箱</li>
+                            <li>凝胶化实验箱</li>
+                            <li>针焰实验箱</li>
+                            <li>灼热丝实验箱</li>
+                            <li>漏电起痕测试仪</li>
+                        </ul>
+                    </div>
+
+                    <div class="lab-card">
+                        <h4>仪器室</h4>
+                        <ul>
+                            <li>离子污染测试仪</li>
+                            <li>RoHS测试仪1.0</li>
+                            <li>RoHS测试仪2.0</li>
+                            <li>原子吸收光谱仪</li>
+                        </ul>
+                    </div>
+
+                    <div class="lab-card">
+                        <h4>切片室</h4>
+                        <ul>
+                            <li>实验通风橱</li>
+                            <li>切片自动取样机</li>
+                            <li>真空干燥箱</li>
+                            <li>双盘双控研磨机</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 设备清单 -->
+        <section class="content-section">
+            <div class="section-header">
+                <div class="block-title" style="text-align: center;">
+                    <h3 class="block-title__title" style="text-align: center;">设备清单<br>
+                        <h2 style="text-align: center;">以下是福建闽威科技主要生产设备的详细清单，涵盖各个制程环节。</h2>
+                        <br>
+                        <!-- /.block-title__base -->
+                        <!-- /.block-title__bold -->
+                    </h3><!-- /.block-title__title -->
+                </div><!-- /.block-title -->
+            </div>
+            <div class="table-container">
+                <h3 style="margin-bottom: 28px;">线路制程设备</h3>
+                <table class="tech-table">
+                    <thead>
+                        <tr>
+                            <th>设备</th>
+                            <th>品牌</th>
+                            <th>产地</th>
+                            <th>设备能力</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>内层涂布机</td>
+                            <td>群翊</td>
+                            <td>中国台湾</td>
+                            <td>膜厚5-35um, 均匀性10±2um</td>
+                        </tr>
+                        <tr>
+                            <td>LDI曝光机</td>
+                            <td>芯碁</td>
+                            <td>中国</td>
+                            <td>对位精度±12μm、L/S: 30/30μm</td>
+                        </tr>
+                        <tr>
+                            <td>真空蚀刻线</td>
+                            <td>宇宙</td>
+                            <td>中国</td>
+                            <td>L/S:40/40μm</td>
+                        </tr>
+                        <tr>
+                            <td>在线AOI</td>
+                            <td>宜美智</td>
+                            <td>中国</td>
+                            <td>L/S: 40/40μm</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 style="margin-bottom: 28px;">压合制程设备</h3>
+                <table class="tech-table">
+                    <thead>
+                        <tr>
+                            <th>设备</th>
+                            <th>品牌</th>
+                            <th>产地</th>
+                            <th>设备能力</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>压机</td>
+                            <td>鸿安</td>
+                            <td>中国</td>
+                            <td>Cu≥12μm</td>
+                        </tr>
+                        <tr>
+                            <td>回流线</td>
+                            <td>追卓</td>
+                            <td>中国</td>
+                            <td>叠合精度±1.5mm</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">裁磨线+Xray钻靶</td>
+                            <td>宏胜</td>
+                            <td>中国</td>
+                            <td>裁磨公差: 平行±0.3mm, 对角±0.5mm</td>
+                        </tr>
+                        <tr>
+                            <td>浩硕</td>
+                            <td>中国</td>
+                            <td>精度±10um</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 style="margin-bottom: 28px;">钻孔制程设备</h3>
+                <table class="tech-table">
+                    <thead>
+                        <tr>
+                            <th>设备</th>
+                            <th>品牌</th>
+                            <th>产地</th>
+                            <th>设备能力</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>机械钻机</td>
+                            <td>唯正</td>
+                            <td>中国</td>
+                            <td>设备精度±25um</td>
+                        </tr>
+                        <tr>
+                            <td>镭射钻机</td>
+                            <td>三菱</td>
+                            <td>日本</td>
+                            <td>定位精度±10um, Φ min50μm</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 style="margin-bottom: 28px;">电镀制程设备</h3>
+                <table class="tech-table">
+                    <thead>
+                        <tr>
+                            <th>设备</th>
+                            <th>品牌</th>
+                            <th>产地</th>
+                            <th>设备能力</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>VCP填孔电镀</td>
+                            <td>东威</td>
+                            <td>中国</td>
+                            <td rowspan="2">板厚:min0.3mm 均匀性:±10%以内 凹陷max10μm</td>
+                        </tr>
+                        <tr>
+                            <td>VCP全板电镀</td>
+                            <td>宇宙</td>
+                            <td>中国</td>
+                        </tr>
+                        <tr>
+                            <td>垂直除胶沉铜</td>
+                            <td>竞铭</td>
+                            <td>中国台湾</td>
+                            <td rowspan="2">板厚≥0.3mm、背光≥9.5级</td>
+                        </tr>
+                        <tr>
+                            <td>水平除胶沉铜</td>
+                            <td>宇宙</td>
+                            <td>中国</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 style="margin-bottom: 28px;">阻焊制程设备</h3>
+                <table class="tech-table">
+                    <thead>
+                        <tr>
+                            <th>设备</th>
+                            <th>品牌</th>
+                            <th>产地</th>
+                            <th>设备能力</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>三机连印线</td>
+                            <td>恒达友创</td>
+                            <td>中国</td>
+                            <td>跑台往复对位精度±0.005mm</td>
+                        </tr>
+                        <tr>
+                            <td>曝光机(CCD LED)</td>
+                            <td>科视</td>
+                            <td>中国</td>
+                            <td>对位精度±12.5μm</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">DI曝光机</td>
+                            <td>网屏</td>
+                            <td>日本</td>
+                            <td>对位精度±10μm</td>
+                        </tr>
+                        <tr>
+
+                            <td>源卓</td>
+                            <td>中国</td>
+                            <td>对位精度±12μm</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 style="margin-bottom: 28px;">测试制程设备</h3>
+                <table class="tech-table">
+                    <thead>
+                        <tr>
+                            <th>设备</th>
+                            <th>品牌</th>
+                            <th>产地</th>
+                            <th>设备能力</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>四倍密通用机</td>
+                            <td>凯码</td>
+                            <td>中国</td>
+                            <td>点数81920，最小针0.15mm</td>
+                        </tr>
+                        <tr>
+                            <td>八倍密通用机</td>
+                            <td>凯码</td>
+                            <td>中国</td>
+                            <td>点数221184，最小针0.07mm</td>
+                        </tr>
+                        <tr>
+                            <td>十二倍密通用机</td>
+                            <td>凯码</td>
+                            <td>中国</td>
+                            <td>点数315392，最小针0.07mm</td>
+                        </tr>
+                        <tr>
+                            <td>电感测试机</td>
+                            <td>旺通达</td>
+                            <td>中国</td>
+                            <td>测试频率：10Hz-1MHz</td>
+                        </tr>
+                        <tr>
+                            <td>飞针测试机</td>
+                            <td>众博信</td>
+                            <td>中国</td>
+                            <td>最小板厚0.2mm，最小焊盘0.05mm</td>
+                        </tr>
+                        <tr>
+                            <td>AVI检查机</td>
+                            <td>宜美智</td>
+                            <td>中国</td>
+                            <td>解析度10μm</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 style="margin-top: 28px;">其他制程设备</h3>
+                <table class="tech-table">
+                    <thead>
+                        <tr>
+                            <th>制程</th>
+                            <th>设备</th>
+                            <th>品牌</th>
+                            <th>产地</th>
+                            <th>设备能力</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>字 符</td>
+                            <td>自动喷墨连线机</td>
+                            <td>劲鑫</td>
+                            <td>中国</td>
+                            <td>对位精度±35um</td>
+                        </tr>
+                        <tr>
+                            <td>成 型</td>
+                            <td>锣机</td>
+                            <td>唯正</td>
+                            <td>中国</td>
+                            <td>定位精度±0.01mm，成型精度±0.05mm</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">表面处理</td>
+                            <td>OSP</td>
+                            <td>宇宙</td>
+                            <td>中国</td>
+                            <td>纵横比8:1</td>
+                        </tr>
+                        <tr>
+                            <td>化锡</td>
+                            <td>宇宙</td>
+                            <td>中国</td>
+                            <td>纵横比8:1(盲孔1:1)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <footer class="site-footer">
+            <div class="site-footer__brand">
+                <div class="container">
+                    <div class="site-footer__brand-carousel owl-carousel owl-theme">
+                        <div class="item">
+                            <img src="/Milky/images/brand/brand-1-1.png" alt="brand image">
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <img src="/Milky/images/brand/brand-1-2.png" alt="brand image">
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <img src="/Milky/images/brand/brand-1-3.png" alt="brand image">
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <img src="/Milky/images/brand/brand-1-4.png" alt="brand image">
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <img src="/Milky/images/brand/brand-1-5.png" alt="brand image">
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <img src="/Milky/images/brand/brand-1-6.png" alt="brand image">
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <img src="images/brand/brand-1-1.png" alt="brand image">
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <img src="images/brand/brand-1-2.png" alt="brand image">
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <img src="images/brand/brand-1-3.png" alt="brand image">
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <img src="images/brand/brand-1-4.png" alt="brand image">
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <img src="images/brand/brand-1-5.png" alt="brand image">
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <img src="images/brand/brand-1-6.png" alt="brand image">
+                        </div><!-- /.item -->
+                    </div><!-- /.site-footer__brand-carousel -->
+                    <hr class="site-footer__brand-hr">
+                </div><!-- /.container -->
+            </div><!-- /.site-footer__brand -->
+            <div class="site-footer__upper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-5">
+                            <div class="footer-widget footer-widget__about-widget">
+                                <h2 class="footer-widget__title">公司介绍</h2><!-- /.footer-widget__title -->
+                                <p class="footer-widget__text">福建闽威科技股份有限公司,成立于1985年，是一家专注于高多层、HDI、COB
+                                    LED、双层和单层电路板制造的国家高新技术企业。公司总部位于福建，拥有现代化的生产基地，致力于为全球客户提供高质量的PCB解决方案。
+
+                                    通过引入先进技术，我们实现了生产流程的高度自动化与智能化，提升效率与品质。目前，公司拥有M3工厂，占地面积100,000平方米，建筑面积63,187平方米，具备强大的产能和研发能力。
+
+                                    我们的产品广泛应用于消费电子、通信、汽车、工业控制等领域，客户遍布全球，包括日立等知名企业。</p><!-- /.footer-widget__text -->
+                            </div><!-- /.footer-widget -->
+                        </div><!-- /.col-lg-6 -->
+                        <div class="col-xl-3 col-lg-3">
+                            <div class="footer-widget footer-widget__links-widget">
+                                <h2 class="footer-widget__title">快速链接</h2><!-- /.footer-widget__title -->
+                                <ul class="footer-widget__links list-unstyled">
+                                    <li>
+                                            <a href="/Milky/index.html">首页</a>
+                                        </li>
+                                        <li>
+                                            <a href="/Milky/Fac.html">设施设备</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/Milky/Honor.html">荣誉成就</a>
+                                        </li>
+                                        <li>
+                                            <a href="/Milky/Business.html">经营销售</a>
+                                        </li>
+                                        <li>
+                                            <a href="/Milky/P&T.html">商品&技术</a>
+                                        </li>
+                                        <li>
+                                            <a href="/Milky/Abount.html">关于我们</a>
+                                        </li>
+                                </ul><!-- /.footer-widget__links -->
+                            </div><!-- /.footer-widget -->
+                        </div><!-- /.col-lg-3 -->
+                        <div class="col-xl-3 col-lg-4">
+                            <div class="footer-widget footer-widget__contact-widget">
+                                <h2 class="footer-widget__title">关于我们</h2><!-- /.footer-widget__title -->
+                                <p class="footer-widget__text">福建省福州市长乐区</p>
+                                <p class="footer-widget__text">闽威科技股份有限公司
+                                </p>
+                                <!-- /.footer-widget__text -->
+                                <p class="footer-widget__text">MW-CP-2025-08-R3 <br>
+                                </p><!-- /.footer-widget__text -->
+                                <p class="footer-widget__text">www.milky-way.com.cn
+                                    <br>
+                                </p><!-- /.footer-widget__text -->
+                            </div><!-- /.footer-widget -->
+                        </div><!-- /.col-lg-3 -->
+                    </div><!-- /.row -->
+                </div><!-- /.container -->
+            </div><!-- /.site-footer__upper -->
+            <div class="site-footer__bottom">
+                <div class="container">
+                    <div class="site-footer__copy">福建闽威科技股份有限公司 </div>
+                    <!-- /.site-footer__copy -->
+                    <ul class="list-unstyled site-footer__links">
+                        <li><a href="#">服务协议</a></li>
+                        <li><a href="#">隐私政策</a></li>
+                    </ul><!-- /.list-unstyled -->
+                </div><!-- /.container -->
+            </div><!-- /.site-footer__bottom -->
+        </footer><!-- /.site-footer -->
+    </div><!-- /.page-wrapper -->
+    <div class="search-popup">
+        <div class="search-popup__overlay custom-cursor__overlay">
+            <div class="cursor"></div>
+            <div class="cursor-follower"></div>
+        </div><!-- /.search-popup__overlay -->
+        <div class="search-popup__inner">
+            <form action="#" class="search-popup__form">
+                <input type="text" name="search" placeholder="Type here to Search....">
+                <button type="submit"><i class="indext-icon-Search"></i></button>
+            </form>
+        </div><!-- /.search-popup__inner -->
+    </div><!-- /.search-popup -->
+    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="indext-icon-arrow-up"></i></a>
+    <script src="/Milky/js/jquery.min.js"></script>
+    <script src="/Milky/js/bootstrap.bundle.min.js"></script>
+    <script src="/Milky/js/bootstrap-datepicker.min.js"></script>
+    <script src="/Milky/js/bootstrap-select.min.js"></script>
+    <script src="/Milky/js/isotope.js"></script>
+    <script src="/Milky/js/jquery.counterup.min.js"></script>
+    <script src="/Milky/js/jquery.magnific-popup.min.js"></script>
+    <script src="/Milky/js/jquery.validate.min.js"></script>
+    <script src="/Milky/js/owl.carousel.min.js"></script>
+    <script src="/Milky/js/TweenMax.min.js"></script>
+    <script src="/Milky/js/waypoints.min.js"></script>
+    <script src="/Milky/js/wow.min.js"></script>
+
+    <script src="/Milky/js/nouislider.js"></script>
+    <script src="/Milky/js/jquery.bootstrap-touchspin.min.js"></script>
+    <script src="/Milky/js/theme.js"></script>
+
+</body>
+
+</html>
