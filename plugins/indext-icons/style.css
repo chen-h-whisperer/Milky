@@ -44,7 +44,7 @@
   content: "\e910";
 }
 .indext-icon-arrow-up:before {
-  content: "\e90c";
+  /* content: "\e90c"; */
 }
 .indext-icon-arrow-down:before {
   content: "\e911";
@@ -71,10 +71,10 @@
   content: "\e904";
 }
 .indext-icon-cta-1-1:before {
-  content: "\e905";
+  /* content: "\e905"; */
 }
 .indext-icon-cta-1-2:before {
-  content: "\e906";
+  /* content: "\e906"; */
 }
 .indext-icon-envelope:before {
   content: "\e907";
