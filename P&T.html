@@ -9,7 +9,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/Milky/images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/Milky/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/Milky/images/favicon/favicon-16x16.png">
-    <!-- <link rel="manifest" href="/Milky/images/favicon/site.webmanifest"> -->
+    <!-- <link rel="manifest" href="images/favicon/site.webmanifest"> -->
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CRubik:400,400i,500,700,900&display=swap"
         rel="stylesheet">
@@ -30,6 +30,29 @@
     <link rel="stylesheet" href="/Milky/css/style.css">
     <link rel="stylesheet" href="/Milky/css/responsive.css">
     <style>
+        .table-container{
+            margin-left: 30px;
+        }
+        /* 简单处理图片大小展示 */
+        .pic1{
+            height: 125px; 
+        }
+        /* 表格右上角圆角 */
+        table thead tr:first-child th {
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+            border-left: none;
+            border-right:none ;
+            border-top:none 
+
+        }
+        /* 修改行间距 */
+        p{
+            height: 14px;
+            line-height: 14px;
+            margin: 0;
+        }
+
         .blog-one__image {
             width: 270px;
             height: 205px;
@@ -96,9 +119,12 @@
                 height: 100%;
             }
 
+            
+
             .blog-one__image img {
                 width: 100%;
                 height: 100%;
+
             }
         }
 
@@ -108,12 +134,19 @@
                 max-width: 100%;
             }
         }
+        /* 响应式：窄屏下让高多层支持能力图片居中 */
+        @media (max-width: 767px) {
+            .tech-images {
+                margin: 0 auto !important;
+                align-items: center !important;
+            }
+        }
     </style>
 
 </head>
 
 <body>
-    
+    <div class="preloader"><span></span></div><!-- /.preloader -->
     <div class="page-wrapper">
         <header class="site-header site-header__header-one ">
             <nav class="navbar navbar-expand-lg navbar-light header-navigation stricky">
@@ -180,7 +213,7 @@
                                         <p><strong>产品类型:</strong>单面板</p>
                                         <p><strong>材料工艺:</strong> FR-1/FR-2/CEM-1/FR-4/CEM-3</p>
                                         <p><strong>适用领域:</strong> 适配器电源板</p>
-                                        <strong>产品特点:</strong> 具备高功率密度和宽温运行能力，满足全球高端电源市场的需求。
+                                        <p><strong>产品特点:</strong> 具备高功率密度和宽温运行能力，满足全球高端电源市场的需求。</p>
                                     </h2><!-- /.blog-one__title -->
 
                                 </div><!-- /.blog-one__single -->
@@ -195,7 +228,7 @@
                                         <p><strong>产品类型:</strong>单面板</p>
                                         <p><strong>材料工艺:</strong> FR-1/CEM-1/FR-4/CEM-3</p>
                                         <p><strong>适用领域:</strong> 飞利浦灯具电源板</p>
-                                        <strong>产品特点:</strong> 超高效节能，无紫外、无红外，直流驱动无频闪，通过欧盟光生物安全认证。
+                                        <p><strong>产品特点:</strong> 超高效节能，无紫外、无红外，直流驱动无频闪，通过欧盟光生物安全认证。</p>
                                     </h2><!-- /.blog-one__title -->
                                 </div><!-- /.blog-one__single -->
                             </div><!-- /.col -->
@@ -209,7 +242,7 @@
                                         <p><strong>产品类型:</strong>单面板 蓝油+蓝底</p>
                                         <p><strong>材料工艺:</strong> CEM-1/FR-4</p>
                                         <p><strong>适用领域:</strong> 手机快充电源板</p>
-                                        <strong>产品特点:</strong> 产品单口功率突破120W,及氮化镓体积缩小，发热降低的形态落地。
+                                        <p><strong>产品特点:</strong> 产品单口功率突破120W,及氮化镓体积缩小，发热降低的形态落地。</p>
                                     </h2><!-- /.blog-one__title -->
                                 </div><!-- /.blog-one__single -->
                             </div><!-- /.col -->
@@ -223,7 +256,7 @@
                                         <p><strong>产品类型:</strong>单面板 2OZ厚铜</p>
                                         <p><strong>材料工艺:</strong> FR-1/CEM-1/FR-4/CEM-3</p>
                                         <p><strong>适用领域:</strong> 户外储能a电源板</p>
-                                        <strong>产品特点:</strong> 具备强大的电磁兼容性，在复杂电磁环境下稳定运行。
+                                        <p><strong>产品特点:</strong> 具备强大的电磁兼容性，在复杂电磁环境下稳定运行。</p>
                                     </h2><!-- /.blog-one__title -->
                                 </div><!-- /.blog-one__single -->
                             </div><!-- /.col -->
@@ -237,7 +270,7 @@
                                         <p><strong>产品类型:</strong>单面板</p>
                                         <p><strong>材料工艺:</strong> CEM-1/KB/长春</p>
                                         <p><strong>适用领域:</strong> 超薄TV电源控制板</p>
-                                        <strong>产品特点:</strong> 具备高耐热性和低功耗特性，确保电视在长时间运行中保持稳定性能，同时满足超薄外观设计需求。
+                                        <p><strong>产品特点:</strong> 具备高耐热性和低功耗特性，确保电视在长时间运行中保持稳定性能，同时满足超薄外观设计需求。</p>
                                     </h2><!-- /.blog-one__title -->
                                 </div><!-- /.blog-one__single -->
                             </div><!-- /.col -->
@@ -251,7 +284,7 @@
                                         <p><strong>产品类型:</strong>单面板</p>
                                         <p><strong>材料工艺:</strong> 高CTI CEM-1/KB/长春/生益</p>
                                         <p><strong>适用领域:</strong> 空调电源主控板</p>
-                                        <strong>产品特点:</strong> 该单面板通过优化电路布局和材料选择，有效降低运行噪音，提升空调的静音性能，为用户营造舒适环境。
+                                        <p><strong>产品特点:</strong> 该单面板通过优化电路布局和材料选择，有效降低运行噪音，提升空调的静音性能，为用户营造舒适环境。</p>
                                     </h2><!-- /.blog-one__title -->
                                 </div><!-- /.blog-one__single -->
                             </div><!-- /.col -->
@@ -265,7 +298,7 @@
                                         <p><strong>产品类型:</strong>单面板</p>
                                         <p><strong>材料工艺:</strong> 高耐热 CEM-1/KB/长春/生益</p>
                                         <p><strong>适用领域:</strong> 无边框显示器电源板</p>
-                                        <strong>产品特点:</strong> 无边框显示器的单面板，采用先进工艺实现高分辨率信号传输，同时保持低功耗和高可靠性，为用户提供极致视觉体验。
+                                        <p><strong>产品特点:</strong> 无边框显示器的单面板，采用先进工艺实现高分辨率信号传输，同时保持低功耗和高可靠性，为用户提供极致视觉体验。</p>
                                     </h2><!-- /.blog-one__title -->
                                 </div><!-- /.blog-one__single -->
                             </div><!-- /.col -->
@@ -279,7 +312,7 @@
                                         <p><strong>产品类型:</strong>单面板</p>
                                         <p><strong>材料工艺:</strong> CEM-1CEM-1/KB/长春/生益/ZD</p>
                                         <p><strong>适用领域:</strong> 音响电源板</p>
-                                        <strong>产品特点:</strong> Hi-Fi级音响电源板采用高纯度铜线，减少信号传输损耗，提供纯净的音频信号，满足高端音响设备的需求。
+                                        <p><strong>产品特点:</strong> Hi-Fi级音响电源板采用高纯度铜线，减少信号传输损耗，提供纯净的音频信号，满足高端音响设备的需求。</p>
                                     </h2><!-- /.blog-one__title -->
                                 </div><!-- /.blog-one__single -->
                             </div><!-- /.col -->
@@ -305,7 +338,7 @@
                                         <p><strong>产品类型:</strong>双面板</p>
                                         <p><strong>材料工艺:</strong> FR-4/KB/华正/生益/南亚</p>
                                         <p><strong>适用领域:</strong> 8K TV双面主板</p>
-                                        <strong>产品特点:</strong> 先进的散热设计， 支持8K超高清视频的流畅播放。
+                                        <p><strong>产品特点:</strong> 先进的散热设计， 支持8K超高清视频的流畅播放。</p>
                                     </h2><!-- /.blog-one__title -->
 
                                 </div><!-- /.blog-one__single -->
@@ -320,7 +353,7 @@
                                         <p><strong>产品类型:</strong>双面板</p>
                                         <p><strong>材料工艺:</strong> FR-4/KB/华正/生益/南亚</p>
                                         <p><strong>适用领域:</strong> 电脑显示主板</p>
-                                        <strong>产品特点:</strong> 具备低延迟和高刷新率特性，提供极致的游戏体验。
+                                        <p><strong>产品特点:</strong> 具备低延迟和高刷新率特性，提供极致的游戏体验。</p>
                                     </h2><!-- /.blog-one__title -->
                                 </div><!-- /.blog-one__single -->
                             </div><!-- /.col -->
@@ -334,7 +367,7 @@
                                         <p><strong>产品类型:</strong>双面板</p>
                                         <p><strong>材料工艺:</strong> 高CTI FR-4/KB/华正</p>
                                         <p><strong>适用领域:</strong> 空调双面控制主板</p>
-                                        <strong>产品特点:</strong> 高效节能，先进的变频技术确保空调在不同运行模式下的性能表现。
+                                        <p><strong>产品特点:</strong> 高效节能，先进的变频技术确保空调在不同运行模式下的性能表现。</p>
                                     </h2><!-- /.blog-one__title -->
                                 </div><!-- /.blog-one__single -->
                             </div><!-- /.col -->
@@ -425,7 +458,7 @@
                                         <p><strong>产品类型:</strong>四层通孔板 中TG150材料</p>
                                         <p><strong>材料工艺:</strong> FR-4/KB/华正/生益/南亚</p>
                                         <p><strong>适用领域:</strong> LED 异形屏</p>
-                                        <strong>产品特点:</strong> 支持高亮度和高对比度显示，适用于创意显示场景。
+                                        <p><strong>产品特点:</strong> 支持高亮度和高对比度显示，适用于创意显示场景。</p>
                                     </h2><!-- /.blog-one__title -->
 
                                 </div><!-- /.blog-one__single -->
@@ -440,7 +473,7 @@
                                         <p><strong>产品类型:</strong>四层通孔板 中TG150材料</p>
                                         <p><strong>材料工艺:</strong> FR-4/KB/华正/生益/南亚</p>
                                         <p><strong>适用领域:</strong> LED 格栅屏</p>
-                                        <strong>产品特点:</strong> 格栅屏具备高通透性和低功耗特性，适用于户外广告和建筑照明。
+                                        <p><strong>产品特点:</strong> 格栅屏具备高通透性和低功耗特性，适用于户外广告和建筑照明。</p>
                                     </h2><!-- /.blog-one__title -->
                                 </div><!-- /.blog-one__single -->
                             </div><!-- /.col -->
@@ -454,7 +487,7 @@
                                         <p><strong>产品类型:</strong>SMD 四层一阶HDI 中TG150材料</p>
                                         <p><strong>材料工艺:</strong> OSP：板厚：2.0T 控深+墨色管控</p>
                                         <p><strong>适用领域:</strong> SMD微间距屏 适用会议中心和高端会议室</p>
-                                        <strong>工艺特点:</strong> 最小贴片：0.3*0.4mm 贴片间距：0.25mm 线宽间距：3/3mil,贴片尺寸公差：+/-20um
+                                        <p><strong>工艺特点:</strong> 最小贴片：0.3*0.4mm 贴片间距：0.25mm 线宽间距：3/3mil,贴片尺寸公差：+/-20um</p>
                                     </h2><!-- /.blog-one__title -->
                                 </div><!-- /.blog-one__single -->
                             </div><!-- /.col -->
@@ -468,7 +501,7 @@
                                         <p><strong>产品类型:</strong>COB 双面通孔 中TG150材料</p>
                                         <p><strong>材料工艺:</strong> 化锡：板厚：1.6/2.0T 控深+墨色管控</p>
                                         <p><strong>适用领域:</strong> Mini LED显示屏 适用光通信、LED背光、直显</p>
-                                        <strong>工艺特点:</strong> 最小贴片：0.13*0.13mm 贴片间距：50um 线宽间距：2.5/2.5mil,贴片尺寸公差：+/-15um
+                                        <p><strong>工艺特点:</strong> 最小贴片：0.13*0.13mm 贴片间距：50um 线宽间距：2.5/2.5mil,贴片尺寸公差：+/-15um</p>
                                     </h2><!-- /.blog-one__title -->
                                 </div><!-- /.blog-one__single -->
                             </div><!-- /.col -->
@@ -482,7 +515,7 @@
                                         <p><strong>产品类型:</strong>四层盘中孔板化金板 中TG150无卤材料</p>
                                         <p><strong>材料工艺:</strong> 生益S1150G 成品板厚：0.3T薄板</p>
                                         <p><strong>适用领域:</strong> 汽车显示灯板</p>
-                                        <strong>工艺特点:</strong> 树塞+POFV 最小贴片：0.3*0.35mm 贴片间距：0.4mm 板厚公差：+/0.1mm/-0
+                                        <p><strong>工艺特点:</strong> 树塞+POFV 最小贴片：0.3*0.35mm 贴片间距：0.4mm 板厚公差：+/0.1mm/-0</p>
                                     </h2><!-- /.blog-one__title -->
                                 </div><!-- /.blog-one__single -->
                             </div><!-- /.col -->
@@ -496,7 +529,7 @@
                                         <p><strong>产品类型:</strong>COB 四层一阶HDI 中TG150/高TG170 材料</p>
                                         <p><strong>材料工艺:</strong> 化锡：板厚：2.0T 控深+墨色管控</p>
                                         <p><strong>适用领域:</strong> Mini LED显示屏 适用光通信、LED背光、直显</p>
-                                        <strong>工艺特点:</strong> 最小贴片：0.13*0.13mm 贴片间距：50um 线宽间距：2.5/2.5mil,贴片尺寸公差：+/-15um
+                                        <p><strong>工艺特点:</strong> 最小贴片：0.13*0.13mm 贴片间距：50um 线宽间距：2.5/2.5mil,贴片尺寸公差：+/-15um</p>
                                     </h2><!-- /.blog-one__title -->
                                 </div><!-- /.blog-one__single -->
                             </div><!-- /.col -->
@@ -751,7 +784,7 @@
                             <div class="blog-one__single">
                                 <div class="blog-one__image">
 
-                                        <img src="/Milky/images/p39.png" alt="">
+                                    <img src="/Milky/images/p39.png" alt="">
                                 </div><!-- /.blog-one__image -->
                                 <h2 class="blog-one__title">
                                     <p><strong>产品类型:</strong>双面板</p>
@@ -865,94 +898,340 @@
             <h2 class="section-title">高多层支持能力</h2>
         </div>
 
+        <div class="table-container" style="display:flex;align-items:flex-start;gap:24px;flex-wrap:wrap;">
+            <div class="tech-table-wrap" style="flex:1 1 60%;min-width:260px;">
+                <table class="tech-table">
+                    <thead>
+                        <tr style="border: none;">
+                            <th colspan="2" rowspan="2" style="border-top-right-radius: 20px; border: none;">项&nbsp;&nbsp;&nbsp;目</th>
+                            <th colspan="2" style="border-top-right-radius: 20px; border-right:none ;border-top:none ;">2025</th>
+                            <th colspan="2" style="border-top-right-radius: 20px; border-right:none ;border-top:none ;">2026</th>
+                            <th colspan="2" style="border-top-right-radius: 20px; border-right:none ;border-top:none ;">2027</th>
+                        </tr>
+                        <tr>
+                            <th class="year-header">批量</th>
+                            <th class="year-header">样品</th>
+                            <th class="year-header">批量</th>
+                            <th class="year-header">样品</th>
+                            <th class="year-header">批量</th>
+                            <th class="year-header">样品</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="2">层&nbsp;&nbsp;&nbsp;数</td>
+                            <td>2 ~ 10L</td>
+                            <td>2 ~ 12L</td>
+                            <td>2 ~ 12L</td>
+                            <td>2 ~ 16L</td>
+                            <td>2 ~ 16L</td>
+                            <td>2 ~ 20L</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">板厚/mm</td>
+                            <td>0.3 ~ 3.2</td>
+                            <td>0.25 ~ 3.2</td>
+                            <td>0.3 ~ 3.2</td>
+                            <td>0.2 ~ 3.2</td>
+                            <td>0.3 ~ 3.2</td>
+                            <td>0.2 ~ 3.2</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">工作板尺寸/inch</td>
+                            <td>24×28</td>
+                            <td>24.5×28.5</td>
+                            <td>24×28</td>
+                            <td>24.5×28.5</td>
+                            <td>24×28</td>
+                            <td>24.5×28.5</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">最薄芯板厚/mm</td>
+                            <td>0.075(不含铜)</td>
+                            <td>0.05(不含铜)</td>
+                            <td>0.05(不含铜)</td>
+                            <td>0.05(不含铜)</td>
+                            <td>0.05(不含铜)</td>
+                            <td>0.05(不含铜)</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">
+                                最大铜厚/oz
+                            </td>
+                            <td>内层</td>
+                            <td> 3 </td>
+                            <td> 4 </td>
+                            <td> 4 </td>
+                            <td> 5 </td>
+                            <td> 5 </td>
+                            <td> 5 </td>
+                        </tr>
+                        <tr>
+                            <td>外层</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>4</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">线宽/线距 /μm</td>
+                            <td>内层</td>
+                            <td>75/75</td>
+                            <td>50/50</td>
+                            <td>50/50</td>
+                            <td>45/45</td>
+                            <td>45/45</td>
+                            <td>45/45</td>
+                        </tr>
+                        <tr>
+                            <td>外层</td>
+                            <td>75/75</td>
+                            <td>63/63</td>
+                            <td>63/63</td>
+                            <td>50/50</td>
+                            <td>50/50</td>
+                            <td>50/50</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
 
-        <div class="table-container">
-            <table class="tech-table">
-                <thead>
-                    <tr>
-                        <th rowspan="2">项目</th>
-                        <th colspan="2">2025</th>
-                        <th colspan="2">2026</th>
-                        <th colspan="2">2027</th>
-                    </tr>
-                    <tr>
-                        <th class="year-header">批量</th>
-                        <th class="year-header">样品</th>
-                        <th class="year-header">批量</th>
-                        <th class="year-header">样品</th>
-                        <th class="year-header">批量</th>
-                        <th class="year-header">样品</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>通孔对准度/mil</td>
-                        <td>D+8</td>
-                        <td>D+7</td>
-                        <td>D+7</td>
-                        <td>D+6</td>
-                        <td>D+6</td>
-                        <td>D+6</td>
-                    </tr>
-                    <tr>
-                        <td>最小BGA/mm</td>
-                        <td>0.3</td>
-                        <td>0.3</td>
-                        <td>0.3</td>
-                        <td>0.3</td>
-                        <td>0.3</td>
-                        <td>0.3</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2">树塞最大厚径比</td>
-                        <td>TH 8 : 1</td>
-                        <td>TH 10 : 1</td>
-                        <td>TH 10 : 1</td>
-                        <td>TH 12 : 1</td>
-                        <td>TH 12 : 1</td>
-                        <td>TH 16 : 1</td>
-                    </tr>
-                    <tr>
-                        <td>BH 1 : 1</td>
-                        <td>BH 1 : 1</td>
-                        <td>BH 1 : 1</td>
-                        <td>BH 1 : 1</td>
-                        <td>BH 1 : 1</td>
-                        <td>BH 1 : 1</td>
-                    </tr>
-                    <tr>
-                        <td>阻焊对准度/mil</td>
-                        <td>±2.0</td>
-                        <td>±1.5</td>
-                        <td>±1.5</td>
-                        <td>±1.0</td>
-                        <td>±1.0</td>
-                        <td>±1.0</td>
-                    </tr>
-                    <tr>
-                        <td>成型公差/mil</td>
-                        <td>±4.0</td>
-                        <td>±4.0</td>
-                        <td>±4.0</td>
-                        <td>±4.0</td>
-                        <td>±4.0</td>
-                        <td>±4.0</td>
-                    </tr>
-                    <tr>
-                        <td>图形到边公差/mm</td>
-                        <td>≥0.25</td>
-                        <td>≥0.25</td>
-                        <td>≥0.20</td>
-                        <td>≥0.15</td>
-                        <td>≥0.15</td>
-                        <td>≥0.13</td>
-                    </tr>
-                    <tr>
-                        <td>表面处理方式</td>
-                        <td colspan="6">化金、镀金、无铅喷锡、化锡、化银、OSP</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="tech-images" style="flex:0 0 220px;display:flex;flex-direction:column;gap:16px;">
+                <div style="height: 295px;"><img src="/Milky/images/图1.png" alt="sample image 1" style="width:100%;height:295px;border-radius:8px;object-fit:cover;"></div>
+                <div style="height: 145px;"><img src="/Milky/images/图2.png" alt="sample image 2" style="width:100%;height:145px;border-radius:8px;object-fit:cover;"></div>
+            </div>
+        </div>
+    </section>
+    <!-- 高多层支持能力 -->
+    <section class="content-section fade-in stagger-delay-4">
+        <div class="section-header">
+            <div class="section-icon">
+            </div>
+            <h2 class="section-title">高多层支持能力</h2>
+        </div>
+
+        <div class="table-container" style="display:flex;align-items:flex-start;gap:24px;flex-wrap:wrap;">
+            <div class="tech-table-wrap" style="flex:1 1 60%;min-width:260px;">
+                <table class="tech-table">
+                    <thead>
+                        <tr>
+                            <th colspan="2" rowspan="2">项目</th>
+                            <th colspan="2">2025</th>
+                            <th colspan="2">2026</th>
+                            <th colspan="2">2027</th>
+                        </tr>
+                        <tr>
+                            <th class="year-header">批量</th>
+                            <th class="year-header">样品</th>
+                            <th class="year-header">批量</th>
+                            <th class="year-header">样品</th>
+                            <th class="year-header">批量</th>
+                            <th class="year-header">样品</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2">阻抗公差</td>
+                            <td>≥50Ω</td>
+                            <td>±10%</td>
+                            <td>±8%</td>
+                            <td>±10%</td>
+                            <td>±8%</td>
+                            <td>±8%</td>
+                            <td>±5%</td>
+                        </tr>
+                        <tr>
+                            <td>≤50Ω</td>
+                            <td>±5</td>
+                            <td>±4</td>
+                            <td>±5</td>
+                            <td>±4</td>
+                            <td>±5</td>
+                            <td>±4</td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">层间偏移</td>
+                            <td>&lt;75</td>
+                            <td>&lt;75</td>
+                            <td>&lt;75</td>
+                            <td>&lt;50</td>
+                            <td>&lt;50</td>
+                            <td>&lt;50</td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">最小钻孔/mm</td>
+                            <td>0.2</td>
+                            <td>0.15</td>
+                            <td>0.2</td>
+                            <td>0.15</td>
+                            <td>0.15</td>
+                            <td>0.15</td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">孔位公差/mm</td>
+                            <td>±0.05</td>
+                            <td>±0.05</td>
+                            <td>±0.05</td>
+                            <td>±0.05</td>
+                            <td>±0.05</td>
+                            <td>±0.05</td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">孔壁粗糙度/μm</td>
+                            <td>&lt;30</td>
+                            <td>&lt;25</td>
+                            <td>&lt;25</td>
+                            <td>&lt;20</td>
+                            <td>&lt;20</td>
+                            <td>&lt;15</td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">最小孔间距/mm</td>
+                            <td>0.35</td>
+                            <td>0.3</td>
+                            <td>0.3</td>
+                            <td>0.3</td>
+                            <td>0.3</td>
+                            <td>0.3</td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">电镀最大厚径比</td>
+                            <td>8:01</td>
+                            <td>10:01</td>
+                            <td>8:01</td>
+                            <td>10:01</td>
+                            <td>10:01</td>
+                            <td>12:01</td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">电镀铜厚极差/μm</td>
+                            <td>≤6</td>
+                            <td>≤6</td>
+                            <td>≤6</td>
+                            <td>≤5</td>
+                            <td>≤5</td>
+                            <td>≤5</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tech-images" style="flex:0 0 220px;display:flex;flex-direction:column;gap:16px;">
+                <img src="/Milky/images/图3.png" alt="sample image 1" style="width:100%;height:503px;border-radius:8px;object-fit:cover;">
+            </div>
+        </div>
+    </section>
+    <!-- 高多层支持能力 -->
+    <section class="content-section fade-in stagger-delay-4">
+        <div class="section-header">
+            <div class="section-icon">
+            </div>
+            <h2 class="section-title">高多层支持能力</h2>
+        </div>
+
+
+        <div class="table-container" style="display:flex;align-items:flex-start;gap:24px;flex-wrap:wrap;">
+            <div class="tech-table-wrap" style="flex:1 1 60%;min-width:260px;">
+                <table class="tech-table">
+                    <thead>
+                        <tr>
+                            <th rowspan="2">项目</th>
+                            <th colspan="2">2025</th>
+                            <th colspan="2">2026</th>
+                            <th colspan="2">2027</th>
+                        </tr>
+                        <tr>
+                            <th class="year-header">批量</th>
+                            <th class="year-header">样品</th>
+                            <th class="year-header">批量</th>
+                            <th class="year-header">样品</th>
+                            <th class="year-header">批量</th>
+                            <th class="year-header">样品</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>通孔对准度/mil</td>
+                            <td>D+8</td>
+                            <td>D+7</td>
+                            <td>D+7</td>
+                            <td>D+6</td>
+                            <td>D+6</td>
+                            <td>D+6</td>
+                        </tr>
+                        <tr>
+                            <td>最小BGA/mm</td>
+                            <td>0.3</td>
+                            <td>0.3</td>
+                            <td>0.3</td>
+                            <td>0.3</td>
+                            <td>0.3</td>
+                            <td>0.3</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">树塞最大厚径比</td>
+                            <td>TH 8 : 1</td>
+                            <td>TH 10 : 1</td>
+                            <td>TH 10 : 1</td>
+                            <td>TH 12 : 1</td>
+                            <td>TH 12 : 1</td>
+                            <td>TH 16 : 1</td>
+                        </tr>
+                        <tr>
+                            <td>BH 1 : 1</td>
+                            <td>BH 1 : 1</td>
+                            <td>BH 1 : 1</td>
+                            <td>BH 1 : 1</td>
+                            <td>BH 1 : 1</td>
+                            <td>BH 1 : 1</td>
+                        </tr>
+                        <tr>
+                            <td>阻焊对准度/mil</td>
+                            <td>±2.0</td>
+                            <td>±1.5</td>
+                            <td>±1.5</td>
+                            <td>±1.0</td>
+                            <td>±1.0</td>
+                            <td>±1.0</td>
+                        </tr>
+                        <tr>
+                            <td>成型公差/mil</td>
+                            <td>±4.0</td>
+                            <td>±4.0</td>
+                            <td>±4.0</td>
+                            <td>±4.0</td>
+                            <td>±4.0</td>
+                            <td>±4.0</td>
+                        </tr>
+                        <tr>
+                            <td>图形到边公差/mm</td>
+                            <td>≥0.25</td>
+                            <td>≥0.25</td>
+                            <td>≥0.20</td>
+                            <td>≥0.15</td>
+                            <td>≥0.15</td>
+                            <td>≥0.13</td>
+                        </tr>
+                        <tr>
+                            <td>表面处理方式</td>
+                            <td colspan="6">化金、镀金、无铅喷锡、化锡、化银、OSP</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tech-images" style="flex:0 0 220px;display:flex;flex-direction:column;gap:16px;">
+                <div style="height: 270px;"><img src="/Milky/images/图4.jpg" alt="sample image 1" style="width:100%;height:270px;border-radius:8px;object-fit:cover;"></div>
+                <div style="height: 175px;"><img src="/Milky/images/图5.jpg" alt="sample image 2" style="width:100%;height:175px;border-radius:8px;object-fit:cover;"></div>
+            </div>
         </div>
     </section>
 
@@ -964,99 +1243,105 @@
             <h2 class="section-title">HDI制程能力</h2>
         </div>
 
-        <div class="table-container">
-            <table class="tech-table">
-                <thead>
-                    <tr>
-                        <th rowspan="2">项目</th>
-                        <th colspan="2">2025</th>
-                        <th colspan="2">2026</th>
-                        <th colspan="2">2027</th>
-                    </tr>
-                    <tr>
-                        <th class="year-header">常规</th>
-                        <th class="year-header">极限</th>
-                        <th class="year-header">常规</th>
-                        <th class="year-header">极限</th>
-                        <th class="year-header">常规</th>
-                        <th class="year-header">极限</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>叠构</td>
-                        <td>1+N+1</td>
-                        <td>2+N+2</td>
-                        <td>2+N+2</td>
-                        <td>3+N+3</td>
-                        <td>3+N+3</td>
-                        <td>4+N+4</td>
-                    </tr>
-                    <tr>
-                        <td>最小盲孔孔径/mil</td>
-                        <td>3</td>
-                        <td>3</td>
-                        <td>3</td>
-                        <td>3</td>
-                        <td>3</td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>最大盲孔厚径比</td>
-                        <td>0.8 : 1</td>
-                        <td>1:01</td>
-                        <td>1:01</td>
-                        <td>1:01</td>
-                        <td>1:01</td>
-                        <td>1:01</td>
-                    </tr>
-                    <tr>
-                        <td>最小盲孔PAD/mil</td>
-                        <td>10</td>
-                        <td>9</td>
-                        <td>9</td>
-                        <td>9</td>
-                        <td>9</td>
-                        <td>9</td>
-                    </tr>
-                    <tr>
-                        <td>最小盲孔Dimple/μm</td>
-                        <td>≤15</td>
-                        <td>≤10</td>
-                        <td>≤10</td>
-                        <td>≤10</td>
-                        <td>≤10</td>
-                        <td>≤10</td>
-                    </tr>
-                    <tr>
-                        <td>最小BGA/mm</td>
-                        <td>0.3</td>
-                        <td>0.3</td>
-                        <td>0.3</td>
-                        <td>0.3</td>
-                        <td>0.3</td>
-                        <td>0.3</td>
-                    </tr>
-                    <tr>
-                        <td>最小板厚/mm</td>
-                        <td>0.4</td>
-                        <td>0.35</td>
-                        <td>0.35</td>
-                        <td>0.35</td>
-                        <td>0.35</td>
-                        <td>0.35</td>
-                    </tr>
-                    <tr>
-                        <td>最大板厚/mm</td>
-                        <td>3.2</td>
-                        <td>3.2</td>
-                        <td>3.2</td>
-                        <td>3.2</td>
-                        <td>3.2</td>
-                        <td>3.2</td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="table-container" style="display:flex;align-items:flex-start;gap:24px;flex-wrap:wrap;">
+            <div class="tech-table-wrap" style="flex:1 1 60%;min-width:260px;">
+                <table class="tech-table">
+                    <thead>
+                        <tr>
+                            <th rowspan="2">项目</th>
+                            <th colspan="2">2025</th>
+                            <th colspan="2">2026</th>
+                            <th colspan="2">2027</th>
+                        </tr>
+                        <tr>
+                            <th class="year-header">常规</th>
+                            <th class="year-header">极限</th>
+                            <th class="year-header">常规</th>
+                            <th class="year-header">极限</th>
+                            <th class="year-header">常规</th>
+                            <th class="year-header">极限</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>叠构</td>
+                            <td>1+N+1</td>
+                            <td>2+N+2</td>
+                            <td>2+N+2</td>
+                            <td>3+N+3</td>
+                            <td>3+N+3</td>
+                            <td>4+N+4</td>
+                        </tr>
+                        <tr>
+                            <td>最小盲孔孔径/mil</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>最大盲孔厚径比</td>
+                            <td>0.8 : 1</td>
+                            <td>1:01</td>
+                            <td>1:01</td>
+                            <td>1:01</td>
+                            <td>1:01</td>
+                            <td>1:01</td>
+                        </tr>
+                        <tr>
+                            <td>最小盲孔PAD/mil</td>
+                            <td>10</td>
+                            <td>9</td>
+                            <td>9</td>
+                            <td>9</td>
+                            <td>9</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>最小盲孔Dimple/μm</td>
+                            <td>≤15</td>
+                            <td>≤10</td>
+                            <td>≤10</td>
+                            <td>≤10</td>
+                            <td>≤10</td>
+                            <td>≤10</td>
+                        </tr>
+                        <tr>
+                            <td>最小BGA/mm</td>
+                            <td>0.3</td>
+                            <td>0.3</td>
+                            <td>0.3</td>
+                            <td>0.3</td>
+                            <td>0.3</td>
+                            <td>0.3</td>
+                        </tr>
+                        <tr>
+                            <td>最小板厚/mm</td>
+                            <td>0.4</td>
+                            <td>0.35</td>
+                            <td>0.35</td>
+                            <td>0.35</td>
+                            <td>0.35</td>
+                            <td>0.35</td>
+                        </tr>
+                        <tr>
+                            <td>最大板厚/mm</td>
+                            <td>3.2</td>
+                            <td>3.2</td>
+                            <td>3.2</td>
+                            <td>3.2</td>
+                            <td>3.2</td>
+                            <td>3.2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tech-images" style="flex:0 0 220px;display:flex;flex-direction:column;gap:16px;">
+                <img src="/Milky/images/图6.jpg" alt="sample image 1" style="width:100%;height:auto;border-radius:8px;object-fit:cover;">
+                <img src="/Milky/images/图7.jpg" alt="sample image 2" style="width:100%;height:auto;border-radius:8px;object-fit:cover;">
+            </div>
         </div>
     </section>
 
@@ -1068,118 +1353,125 @@
             <h2 class="section-title">COB制程能力</h2>
         </div>
 
-        <div class="table-container">
-            <table class="tech-table">
-                <thead>
-                    <tr>
-                        <th rowspan="2">项目</th>
-                        <th colspan="2">2025</th>
-                        <th colspan="2">2026</th>
-                        <th colspan="2">2027</th>
-                    </tr>
-                    <tr>
-                        <th class="year-header">批量</th>
-                        <th class="year-header">样品</th>
-                        <th class="year-header">批量</th>
-                        <th class="year-header">样品</th>
-                        <th class="year-header">批量</th>
-                        <th class="year-header">样品</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td rowspan="2">Mark点到Mark点/mm</td>
-                        <td>±0.05</td>
-                        <td>±0.035</td>
-                        <td>±0.05</td>
-                        <td>±0.035</td>
-                        <td>±0.05</td>
-                        <td>±0.035</td>
-                    </tr>
-                    <tr>
-                        <td>(长边&lt;350)</td>
-                        <td>(长边＜250)</td>
-                        <td>(长边&lt;350)</td>
-                        <td>(长边＜250)</td>
-                        <td>(长边&lt;350)</td>
-                        <td>(长边＜250)</td>
-                    </tr>
+        <div class="table-container" style="display:flex;align-items:flex-start;gap:24px;flex-wrap:wrap;">
+            <div class="tech-table-wrap" style="flex:1 1 60%;min-width:260px;">
+                <table class="tech-table">
+                    <thead>
+                        <tr>
+                            <th rowspan="2">项目</th>
+                            <th colspan="2">2025</th>
+                            <th colspan="2">2026</th>
+                            <th colspan="2">2027</th>
+                        </tr>
+                        <tr>
+                            <th class="year-header">批量</th>
+                            <th class="year-header">样品</th>
+                            <th class="year-header">批量</th>
+                            <th class="year-header">样品</th>
+                            <th class="year-header">批量</th>
+                            <th class="year-header">样品</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2">Mark点到Mark点/mm</td>
+                            <td>±0.05</td>
+                            <td>±0.035</td>
+                            <td>±0.05</td>
+                            <td>±0.035</td>
+                            <td>±0.05</td>
+                            <td>±0.035</td>
+                        </tr>
+                        <tr>
+                            <td>(长边&lt;350)</td>
+                            <td>(长边＜250)</td>
+                            <td>(长边&lt;350)</td>
+                            <td>(长边＜250)</td>
+                            <td>(长边&lt;350)</td>
+                            <td>(长边＜250)</td>
+                        </tr>
 
-                    <tr>
-                        <td>最小灯PAD尺寸/mm</td>
-                        <td>0.13×0.13</td>
-                        <td>0.10×0.13</td>
-                        <td>0.10×0.13</td>
-                        <td>0.08×0.13</td>
-                        <td>0.08×0.13</td>
-                        <td>0.08×0.10</td>
-                    </tr>
-                    <tr>
-                        <td>最小灯PAD尺寸公差/mm</td>
-                        <td>±0.20</td>
-                        <td>±0.18</td>
-                        <td>±0.18</td>
-                        <td>±0.15</td>
-                        <td>±0.18</td>
-                        <td>±0.15</td>
-                    </tr>
-                    <tr>
-                        <td>最小灯PAD间距/μm</td>
-                        <td>55</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>50</td>
-                        <td>45</td>
-                        <td>45</td>
-                    </tr>
-                    <tr>
-                        <td>最小灯PAD间距公差/μm</td>
-                        <td>±15</td>
-                        <td>±12</td>
-                        <td>±12</td>
-                        <td>±10</td>
-                        <td>±12</td>
-                        <td>±10</td>
-                    </tr>
-                    <tr>
-                        <td>阻焊油墨厚度/μm</td>
-                        <td>5~15</td>
-                        <td>5~20</td>
-                        <td>5~18</td>
-                        <td>5~20</td>
-                        <td>5~20</td>
-                        <td>5~25</td>
-                    </tr>
-                    <tr>
-                        <td>阻焊油墨对位/μm</td>
-                        <td>±37.5</td>
-                        <td>±25(DI机)</td>
-                        <td>±37.5</td>
-                        <td>±25(DI机)</td>
-                        <td>±37.5</td>
-                        <td>±25(DI机)</td>
-                    </tr>
+                        <tr>
+                            <td>最小灯PAD尺寸/mm</td>
+                            <td>0.13×0.13</td>
+                            <td>0.10×0.13</td>
+                            <td>0.10×0.13</td>
+                            <td>0.08×0.13</td>
+                            <td>0.08×0.13</td>
+                            <td>0.08×0.10</td>
+                        </tr>
+                        <tr>
+                            <td>最小灯PAD尺寸公差/mm</td>
+                            <td>±0.20</td>
+                            <td>±0.18</td>
+                            <td>±0.18</td>
+                            <td>±0.15</td>
+                            <td>±0.18</td>
+                            <td>±0.15</td>
+                        </tr>
+                        <tr>
+                            <td>最小灯PAD间距/μm</td>
+                            <td>55</td>
+                            <td>50</td>
+                            <td>50</td>
+                            <td>50</td>
+                            <td>45</td>
+                            <td>45</td>
+                        </tr>
+                        <tr>
+                            <td>最小灯PAD间距公差/μm</td>
+                            <td>±15</td>
+                            <td>±12</td>
+                            <td>±12</td>
+                            <td>±10</td>
+                            <td>±12</td>
+                            <td>±10</td>
+                        </tr>
+                        <tr>
+                            <td>阻焊油墨厚度/μm</td>
+                            <td>5~15</td>
+                            <td>5~20</td>
+                            <td>5~18</td>
+                            <td>5~20</td>
+                            <td>5~20</td>
+                            <td>5~25</td>
+                        </tr>
+                        <tr>
+                            <td>阻焊油墨对位/μm</td>
+                            <td>±37.5</td>
+                            <td>±25(DI机)</td>
+                            <td>±37.5</td>
+                            <td>±25(DI机)</td>
+                            <td>±37.5</td>
+                            <td>±25(DI机)</td>
+                        </tr>
 
-                    <tr>
-                        <td>控深钻公差/mm</td>
-                        <td>±0.10</td>
-                        <td>±0.075</td>
-                        <td>±0.075</td>
-                        <td>±0.05</td>
-                        <td>±0.075</td>
-                        <td>±0.05</td>
-                    </tr>
-                    <tr>
-                        <td>板翘公差/%</td>
-                        <td>≤0.75</td>
-                        <td>≤0.5</td>
-                        <td>≤0.5</td>
-                        <td>≤0.5</td>
-                        <td>≤0.5</td>
-                        <td>≤0.3</td>
-                    </tr>
-                </tbody>
-            </table>
+                        <tr>
+                            <td>控深钻公差/mm</td>
+                            <td>±0.10</td>
+                            <td>±0.075</td>
+                            <td>±0.075</td>
+                            <td>±0.05</td>
+                            <td>±0.075</td>
+                            <td>±0.05</td>
+                        </tr>
+                        <tr>
+                            <td>板翘公差/%</td>
+                            <td>≤0.75</td>
+                            <td>≤0.5</td>
+                            <td>≤0.5</td>
+                            <td>≤0.5</td>
+                            <td>≤0.5</td>
+                            <td>≤0.3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tech-images" style="flex:0 0 220px;display:flex;flex-direction:column;gap:16px;">
+                <div style="height: 129px;"><img src="/Milky/images/图8.jpg" alt="sample image 1" style="width:100%;height:129px;border-radius:8px;object-fit:cover;"></div>
+                <div style="height: 129px;"><img src="/Milky/images/图9.jpg" alt="sample image 2" style="width:100%;height:129px;border-radius:8px;object-fit:cover;"></div>
+                <div style="height: 258px;"><img src="/Milky/images/图10.jpg" alt="sample image 3" style="width:100%;height:258px;border-radius:8px;object-fit:cover;"></div>
+            </div>
         </div>
     </section>
 
@@ -1191,50 +1483,57 @@
             <h2 class="section-title">特殊工艺制程能力</h2>
         </div>
 
-        <div class="table-container">
-            <table class="tech-table">
-                <thead>
-                    <tr>
-                        <th colspan="2">项目</th>
-                        <th>技术能力</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td colspan="2">POFV (VIPPO)</td>
-                        <td>√</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">混压</td>
-                        <td>碳氢+FR4、高速+FR4</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="3">金手指</td>
-                        <td>无引线</td>
-                        <td>√</td>
-                    </tr>
-                    <tr>
-                        <td>长短</td>
-                        <td>√</td>
-                    </tr>
-                    <tr>
-                        <td>分段</td>
-                        <td>分段间距6mils</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">半金属化</td>
-                        <td>最小半化孔0.6mm，Pitch0.9mm</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">机械盲孔+顺序层压</td>
-                        <td>N+N、N+M</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">其它</td>
-                        <td>沉头孔工艺、RCC工艺、压合金属基</td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="table-container" style="display:flex;align-items:flex-start;gap:24px;flex-wrap:wrap;">
+            <div class="tech-table-wrap" style="flex:1 1 60%;min-width:260px;">
+                <table class="tech-table">
+                    <thead>
+                        <tr>
+                            <th colspan="2">项目</th>
+                            <th>技术能力</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="2">POFV (VIPPO)</td>
+                            <td>√</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">混压</td>
+                            <td>碳氢+FR4、高速+FR4</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">金手指</td>
+                            <td>无引线</td>
+                            <td>√</td>
+                        </tr>
+                        <tr>
+                            <td>长短</td>
+                            <td>√</td>
+                        </tr>
+                        <tr>
+                            <td>分段</td>
+                            <td>分段间距6mils</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">半金属化</td>
+                            <td>最小半化孔0.6mm，Pitch0.9mm</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">机械盲孔+顺序层压</td>
+                            <td>N+N、N+M</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">其它</td>
+                            <td>沉头孔工艺、RCC工艺、压合金属基</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tech-images" style="flex:0 0 220px;display:flex;flex-direction:column;gap:16px;margin-bottom: 10px;">
+                <div class="pic1"><img src="/Milky/images/图11.png" alt="sample image 1" style="width:100%;height:125px;border-radius:8px;object-fit:cover;"></div>
+                <div class="pic1"><img src="/Milky/images/图12.jpg" alt="sample image 2" style="width:100%;height:125px;border-radius:8px;object-fit:cover;"></div>
+                <div class="pic1"><img src="/Milky/images/图13.jpg" alt="sample image 3" style="width:100%;height:125px;border-radius:8px;object-fit:cover;"></div>
+            </div>
         </div>
     </section>
     <footer class="site-footer">
@@ -1381,7 +1680,4 @@
 
 </body>
 
-
 </html>
-
-
