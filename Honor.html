@@ -321,6 +321,39 @@
         </div><!-- /.search-popup__inner -->
     </div><!-- /.search-popup -->
     <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="indext-icon-arrow-up"></i></a>
+    <script>
+        // Reveal the + sign when the counter value stops changing
+        (function () {
+            var selector = '.about-six__fact-wrap .counter';
+            var nodes = document.querySelectorAll(selector);
+            nodes.forEach(function (node) {
+                var plus = node.parentElement.querySelector('.counter-plus');
+                if (!plus) return;
+
+                var timeout = null;
+                var observer = new MutationObserver(function (mutations) {
+                    // hide plus as soon as number changes
+                    plus.classList.remove('plus-visible');
+                    if (timeout) clearTimeout(timeout);
+                    // wait for 450ms of no changes, then show plus
+                    timeout = setTimeout(function () {
+                        plus.classList.add('plus-visible');
+                    }, 450);
+                });
+
+                // Observe text/node changes inside the counter span
+                observer.observe(node, { childList: true, characterData: true, subtree: true });
+
+                // If the number is static on load, show the plus after a short delay
+                // (but allow mutation handler to delay further if animation runs)
+                setTimeout(function () {
+                    // trigger the same logic as if it stopped changing
+                    if (timeout) clearTimeout(timeout);
+                    plus.classList.add('plus-visible');
+                }, 600);
+            });
+        })();
+    </script>
     <script src="/Milky/js/jquery.min.js"></script>
     <script src="/Milky/js/bootstrap.bundle.min.js"></script>
     <script src="/Milky/js/bootstrap-datepicker.min.js"></script>
@@ -342,5 +375,6 @@
 
 
 </html>
+
 
 
