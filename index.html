@@ -32,6 +32,30 @@
         .about-two__img img {
             height: 400px;
         }
+        /* Navbar CTA (right side) - minimal, responsive */
+        .nav-cta { 
+            position: absolute; 
+            right: 18px; 
+            top: 50%; 
+            transform: translateY(-50%); 
+            z-index: 30; 
+        }
+        .nav-cta .btn { 
+            padding: 8px 14px; 
+            font-size: 15px; 
+            border-radius: 6px; 
+        }
+        @media (max-width: 991px) {
+            .nav-cta { 
+                float: right;
+                position: static; 
+                display: block; 
+                margin-top: 20px; 
+                margin-bottom: 10px;
+                transform: none; 
+                text-align: center; 
+            }
+        }
 
         @media (max-width: 991px) {
             .blog-one__image {
@@ -682,6 +706,7 @@
 
 
 </html>
+
 
 
 
