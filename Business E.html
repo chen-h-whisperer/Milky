@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business</title>
+    <!-- <link rel="stylesheet" href="/css/Business.css"> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/Milky/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Milky/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Milky/images/favicon/favicon-16x16.png">
+    <!-- <link rel="manifest" href="images/favicon/site.webmanifest"> -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CRubik:400,400i,500,700,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/Milky/css/animate.css">
+    <link rel="stylesheet" href="/Milky/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Milky/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="/Milky/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="/Milky/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/Milky/css/hover-min.css">
+    <link rel="stylesheet" href="/Milky/css/magnific-popup.css">
+    <link rel="stylesheet" href="/Milky/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/Milky/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/Milky/plugins/indext-icons/style.css">
+    <link rel="stylesheet" href="/Milky/css/nouislider.css">
+    <link rel="stylesheet" href="/Milky/css/jquery.bootstrap-touchspin.min.css">
+
+    <link rel="stylesheet" href="/Milky/css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/Milky/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* 视觉基调：高端、简洁、微交互 */
+        :root {
+            --accent: #b71c1c;
+            --muted: #6b6b76;
+            --bg: #f5f7fa;
+            --card: #ffffff;
+            --glass: rgba(255, 255, 255, 0.65);
+            --shadow-lg: 0 18px 45px rgba(16, 24, 40, 0.08);
+            --shadow-sm: 0 8px 20px rgba(16, 24, 40, 0.06);
+            --radius: 14px;
+            --container-gap: 22px;
+        }
+
+        /* 基础排版 */
+        body {
+            background: linear-gradient(180deg, #ffffff 0%, var(--bg) 100%);
+            color: #222;
+            font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            line-height: 1.7;
+        }
+
+        /* banner • 保持简洁大气 */
+        .banner {
+            margin: 18px 0;
+            padding: 42px 28px;
+            border-radius: 14px;
+            background: linear-gradient(180deg, rgba(183, 28, 28, 0.04), rgba(255, 255, 255, 0.6));
+            box-shadow: var(--shadow-lg);
+            text-align: center;
+        }
+
+        .banner h2 {
+            margin: 0 0 8px;
+            font-size: 2.2rem;
+            color: #111;
+            letter-spacing: .2px;
+            font-weight: 700;
+        }
+
+        .banner p {
+            margin: 0;
+            color: var(--muted);
+            max-width: 920px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 1.05rem;
+        }
+
+        /* 客户名录卡片 */
+        #clients {
+            margin-top: 12px;
+        }
+
+        #clients h2 {
+            font-size: 1.5rem;
+            color: #111;
+            margin-bottom: 6px;
+            letter-spacing: .2px;
+        }
+
+        #clients p {
+            color: var(--muted);
+        }
+
+        .client-list {
+            margin-top: 14px;
+            padding: 18px 20px;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.9), var(--glass));
+            border-radius: 12px;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(16, 24, 40, 0.03);
+            font-weight: 600;
+            color: #333;
+        }
+
+        /* 产能图表，美化进度条 */
+        .capacity-chart {
+            margin-top: 18px;
+        }
+
+        .chart-bar {
+            margin-bottom: 18px;
+        }
+
+        .chart-bar .year {
+            font-weight: 700;
+            color: #222;
+            margin-bottom: 8px;
+        }
+
+        .bar-container {
+            display: flex;
+            align-items: center;
+            height: 44px;
+            background: linear-gradient(90deg, #f2f4f7, #fbfbfd);
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid rgba(16, 24, 40, 0.03);
+            box-shadow: inset 0 -6px 18px rgba(255, 255, 255, 0.35);
+        }
+
+        .single-bar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: 700;
+            padding: 0 14px;
+            background: linear-gradient(90deg, #b71c1c, #e53935);
+            min-width: 40px;
+            transition: width .9s cubic-bezier(.2, .9, .2, 1);
+            box-shadow: inset 0 -6px 18px rgba(255, 255, 255, 0.06);
+            white-space: nowrap;
+        }
+
+        .multi-bar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #111;
+            font-weight: 700;
+            padding: 0 12px;
+            background: linear-gradient(90deg, #ffb74d, #ff9800);
+            min-width: 40px;
+            transition: width .9s cubic-bezier(.2, .9, .2, 1);
+            white-space: nowrap;
+        }
+
+        /* 鼠标悬停展示更多阴影 */
+        .chart-bar:hover .bar-container {
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-4px);
+            transition: all .25s ease;
+        }
+
+        /* 地图与地域卡片 */
+        .map-container {
+            margin-top: 14px;
+            padding: 14px;
+            border-radius: 12px;
+            background: var(--card);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(16, 24, 40, 0.03);
+        }
+
+        .location-list {
+            margin-top: 14px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 14px;
+        }
+
+        .location-item {
+            background: linear-gradient(180deg, #fff, #fff);
+            padding: 14px;
+            border-radius: 12px;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(16, 24, 40, 0.03);
+        }
+
+        .location-item h3 {
+            margin: 0 0 6px;
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        /* 品质流程 • 卡片风格 */
+        .quality-flow {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 18px 0;
+        }
+
+        .flow-step {
+            min-width: 160px;
+            max-width: 260px;
+            background: linear-gradient(180deg, #fff, #fcfcfc);
+            padding: 14px;
+            border-radius: 12px;
+            border: 1px solid rgba(16, 24, 40, 0.03);
+            box-shadow: var(--shadow-sm);
+            text-align: center;
+        }
+
+        .flow-arrow {
+            color: var(--accent);
+            font-size: 1.3rem;
+            padding: 0 6px;
+        }
+
+        /* 品质网格 • 卡片阴影与动画 */
+        .quality-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            margin-top: 12px;
+        }
+
+        .quality-item {
+            background: linear-gradient(180deg, #fff, #fbfbfb);
+            padding: 16px;
+            border-radius: 12px;
+            box-shadow: var(--shadow-lg);
+            transition: transform .18s ease, box-shadow .18s ease;
+            border: 1px solid rgba(16, 24, 40, 0.03);
+        }
+
+        .quality-item h4 {
+            color: var(--accent);
+            margin-top: 0;
+            font-weight: 800;
+        }
+
+        .quality-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 28px 68px rgba(16, 24, 40, 0.10);
+        }
+
+        /* 重点文本强调 */
+        .quality-highlight {
+            text-align: center;
+            padding: 16px;
+            border-radius: 10px;
+            background: linear-gradient(90deg, rgba(183, 28, 28, 0.06), rgba(255, 255, 255, 0.6));
+            color: var(--accent);
+            font-weight: 800;
+            margin: 10px 0 18px;
+        }
+
+        /* 微交互：渐入动效 */
+        .fade-in {
+            opacity: 1;
+            transform: translateY(0);
+            transition: all .6s cubic-bezier(.2, .9, .2, 1);
+        }
+
+        .stagger-delay-1 {
+            transition-delay: 80ms;
+        }
+
+        .stagger-delay-2 {
+            transition-delay: 140ms;
+        }
+
+        .stagger-delay-3 {
+            transition-delay: 200ms;
+        }
+
+        /* 响应式调整（不覆盖 header/footer/navigation 原有样式） */
+        @media (max-width: 992px) {
+            .banner {
+                padding: 28px 18px;
+            }
+
+            .location-list {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .quality-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .flow-step {
+                min-width: 140px;
+            }
+
+            .bar-container {
+                height: 36px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .banner {
+                padding: 20px 12px;
+            }
+
+            .banner h2 {
+                font-size: 1.6rem;
+            }
+
+            .location-list {
+                grid-template-columns: 1fr;
+            }
+
+            .quality-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .flow-step {
+                min-width: 100%;
+                text-align: left;
+            }
+
+            .chart-bar .year {
+                font-size: 0.95rem;
+            }
+
+            .bar-container {
+                height: 28px;
+            }
+
+            .single-bar,
+            .multi-bar {
+                font-size: 0.85rem;
+                padding: 0 8px;
+            }
+        }
+
+        /* 图片风格 */
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    
+    <div class="page-wrapper">
+        <!-- 头部 -->
+        <header class="site-header site-header__header-one ">
+            <nav class="navbar navbar-expand-lg navbar-light header-navigation stricky">
+                <!-- 头部导航栏 -->
+                <div class="container clearfix">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="logo-box">
+                        <a class="navbar-brand" href="index-3.html">
+                            <img src="/Milky/images/logo.png" width="185" class="main-logo" alt="Awesome Image" />
+                        </a>
+                        <button class="menu-toggler" data-target=".main-navigation">
+                            <span class="fa fa-bars"></span>
+                        </button>
+                    </div><!-- /.logo-box -->
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="main-navigation">
+                        <ul class=" navigation-box @@extra_class">
+                            <li>
+                                <a href="/Milky/index E.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="/Milky/Fac E.html">Facilities </a>
+                            </li>
+                            <li>
+                                <a href="/Milky/Honor E.html">Honors</a>
+                            </li>
+                            <li  class="current">
+                                <a href="/Milky/Business E.html">Business</a>
+                            </li>
+                            <li>
+                                <a href="/Milky/P&T E.html">Product&Technology</a>
+                            </li>
+                            <li>
+                                <a href="/Milky/Abount E.html">About US</a>
+                            </li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container -->
+            </nav>
+        </header><!-- /.site-header -->
+        <section class="inner-banner">
+            <div class="container">
+                <h1 class="inner-banner__title">Business & Sales</h1><!-- /.inner-banner__title -->
+
+            </div><!-- /.container -->
+        </section><!-- /.inner-banner -->
+
+        <!-- 横幅 -->
+        <section class="banner">
+            <div class="container">
+                <h2>Business & Sales</h2>
+                <p>Fujian Milky-way Technology provides customers with high-quality products and services through excellent quality control, a broad customer base, and global market coverage.</p>
+            </div>
+        </section>
+
+        <div class="container">
+            <section id="clients" class="content-section fade-in">
+                <h2><i class="fas fa-users"></i> Client List</h2>
+                <p>We have established long-term stable partnerships with many well-known global brands, spanning electronics manufacturing, home appliances, technology and more.</p>
+
+                <div class="client-list">
+                    <p>Xiaomi, Huawei, Midea, TCL, AUX, Skyworth, Dyson, TPV Technology, Signify, Debang Lighting, and more</p>
+                </div>
+
+                <p>Our customers are distributed across consumer electronics, home appliances, lighting and other industries, demonstrating the wide applicability and excellent quality of our products.</p>
+            </section>
+
+            <section id="capacity" class="content-section fade-in stagger-delay-1">
+                <h2><i class="fas fa-chart-line"></i> Production & Planning</h2>
+                <p>We continue to expand capacity to meet growing market demand. Below is our capacity planning:</p>
+
+                <div class="capacity-chart">
+                    <div class="chart-bar">
+                        <div class="year">2021</div>
+                        <div class="bar-container">
+                            <div class="single-bar" style="width: 50%">Single-sided: 1.20M m²</div>
+                            <div class="multi-bar" style="width: 30%">Double-sided/Multi-layer: 0.72M m²</div>
+                        </div>
+                    </div>
+                    <div class="chart-bar">
+                        <div class="year">2022</div>
+                        <div class="bar-container">
+                            <div class="single-bar" style="width: 46%">Single-sided: 1.10M m²</div>
+                            <div class="multi-bar" style="width: 35%">Double-sided/Multi-layer: 0.84M m²</div>
+                        </div>
+                    </div>
+                    <div class="chart-bar">
+                        <div class="year">2023</div>
+                        <div class="bar-container">
+                            <div class="single-bar" style="width: 54%">Single-sided: 1.30M m²</div>
+                            <div class="multi-bar" style="width: 38%">Double-sided/Multi-layer: 0.90M m²</div>
+                        </div>
+                    </div>
+                    <div class="chart-bar">
+                        <div class="year">2024</div>
+                        <div class="bar-container">
+                            <div class="single-bar" style="width: 75%">Single-sided: 1.80M m²</div>
+                            <div class="multi-bar" style="width: 50%">Double-sided/Multi-layer: 1.20M m²</div>
+                        </div>
+                    </div>
+                    <div class="chart-bar">
+                        <div class="year">2025</div>
+                        <div class="bar-container">
+                            <div class="single-bar" style="width: 75%">Single-sided: 1.80M m²</div>
+                            <div class="multi-bar" style="width: 63%">Double-sided/Multi-layer: 1.50M m²</div>
+                        </div>
+                    </div>
+                    <div class="chart-bar">
+                        <div class="year">2026</div>
+                        <div class="bar-container">
+                            <div class="single-bar" style="width: 75%">Single-sided: 1.80M m²</div>
+                            <div class="multi-bar" style="width: 75%">Double-sided/Multi-layer: 1.80M m²</div>
+                        </div>
+                    </div>
+                    <div class="chart-bar">
+                        <div class="year">2027</div>
+                        <div class="bar-container">
+                            <div class="single-bar" style="width: 75%">Single-sided: 1.80M m²</div>
+                            <div class="multi-bar" style="width: 88%">Double-sided/Multi-layer: 2.10M m²</div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Production Capacity Plan Details</h3>
+                <ul>
+                    <li><strong>Single-sided capacity</strong>: In 2023 we increased capacity to 1.30M m²; in 2024 we achieved the annual capacity growth target of 1.80M m².</li>
+                    <li><strong>Double-sided / multi-layer high-precision boards</strong>: Achieved a >25% compound annual growth rate for three consecutive years.</li>
+                    <li>In 2023 we completed the M3 factory construction and equipment commissioning; in 2024 we put 1.20M m² into production; in 2025 we planned to add 0.20M m² of high-precision HDI capacity.</li>
+                </ul>
+            </section>
+
+            <section id="market" class="content-section fade-in stagger-delay-2">
+                <h2><i class="fas fa-globe-americas"></i> Market Reach</h2>
+                <p>Our products are sold worldwide; we have a broad international sales network serving five continents.</p>
+
+                <div class="map-container">
+                    <div class="world-map">
+                        <img src="/Milky/Images/图片21.png" alt=""
+                            style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                    </div>
+                </div>
+
+                <div class="location-list">
+                    <div class="location-item">
+                        <h3>North America</h3>
+                        <p>Canada, United States, Mexico</p>
+                    </div>
+                    <div class="location-item">
+                        <h3>South America</h3>
+                        <p>Brazil</p>
+                    </div>
+                    <div class="location-item">
+                        <h3>Europe</h3>
+                        <p>France, Germany, Poland</p>
+                    </div>
+                    <div class="location-item">
+                        <h3>Africa</h3>
+                        <p>Nigeria</p>
+                    </div>
+                    <div class="location-item">
+                        <h3>Asia</h3>
+                        <p>India, South Korea, Japan, Thailand, Vietnam, Indonesia</p>
+                    </div>
+                </div>
+
+                <h3>Key Domestic Markets</h3>
+                <p>Beijing, Shanghai, Guangzhou, Shenzhen, Wuhan, Taiwan and other major cities and regions.</p>
+            </section>
+
+            <section id="quality" class="content-section fade-in stagger-delay-3">
+                <h2><i class="fas fa-award"></i> Quality Control System</h2>
+                <p>We have established a comprehensive quality control system to ensure that every step from raw materials to finished products meets the highest standards.</p>
+
+                <h3>Quality Control Process</h3>
+
+                <div class="quality-flow">
+                    <div class="flow-step">
+                        <h4>Raw Materials</h4>
+                        <p>Supplier audit</p>
+                        <p>Sample testing</p>
+                    </div>
+                    <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
+                    <div class="flow-step">
+                        <h4>Production Process</h4>
+                        <p>Pre-process control</p>
+                        <p>Periodic sampling</p>
+                    </div>
+                    <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
+                    <div class="flow-step">
+                        <h4>Finished Products</h4>
+                        <p>QA / AOI inspection</p>
+                        <p>Flying probe testing</p>
+                    </div>
+                    <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
+                    <div class="flow-step">
+                        <h4>Customer Feedback</h4>
+                        <p>Quality improvement plan</p>
+                        <p>Internal process optimization</p>
+                    </div>
+                    <div class="flow-arrow"><i class="fas fa-arrow-right"></i></div>
+                    <div class="flow-step">
+                        <h4>Improvement</h4>
+                        <p>Improve product consistency</p>
+                        <p>Reduce defect rate</p>
+                    </div>
+                </div>
+
+                <p style="text-align: center; margin: 20px 0; font-weight: 600; color: #c00;">
+                    <i class="fas fa-arrow-circle-right"></i> Data traceability → Root cause analysis → Continuous improvement
+                </p>
+
+                <h3>Quality Department Functions</h3>
+                <div class="quality-grid">
+                    <div class="quality-item">
+                        <h4>DDC</h4>
+                        <p>Quality system maintenance and internal/external audits; document control</p>
+                    </div>
+                    <div class="quality-item">
+                        <h4>IQC</h4>
+                        <p>Incoming quality inspection for raw materials and outsourced materials</p>
+                    </div>
+                    <div class="quality-item">
+                        <h4>SQE</h4>
+                        <p>Supplier quality management</p>
+                    </div>
+                    <div class="quality-item">
+                        <h4>OQC</h4>
+                        <p>Outgoing product inspection, dimensional measurement, shipment reports, reliability testing</p>
+                    </div>
+                    <div class="quality-item">
+                        <h4>IPQC</h4>
+                        <p>In-process quality control</p>
+                    </div>
+                    <div class="quality-item">
+                        <h4>DQE</h4>
+                        <p>Responsible for reviewing engineering MI and CAM data</p>
+                    </div>
+                    <div class="quality-item">
+                        <h4>QAE</h4>
+                        <p>Reliability testing and analysis, instrument calibration, measurement system analysis, quality determination</p>
+                    </div>
+                    <div class="quality-item">
+                        <h4>CS</h4>
+                        <p>Customer service and review of customer requirements</p>
+                    </div>
+                    <div class="quality-item">
+                        <h4>MRB</h4>
+                        <p>Scrap determination and analysis</p>
+                    </div>
+                </div>
+
+                <h3>Quality Policy</h3>
+                <p
+                    style="font-size: 1.3rem; font-weight: 600; color: #c00; text-align: center; padding: 15px; background: #f8d7da; border-radius: 8px;">
+                    Quality First · Integrity-based · Continuous Improvement · Customer Satisfaction
+                </p>
+
+                <div class="quality-grid">
+                    <div class="quality-item">
+                        <h4>Advanced Quality Planning</h4>
+                        <ul>
+                            <li>New product feasibility assessment</li>
+                            <li>Manufacturing process planning</li>
+                            <li>Process Failure Mode and Effects Analysis (PFMEA)</li>
+                            <li>New product pilot run</li>
+                            <li>Pre-production control plan</li>
+                            <li>Identify special process and product characteristics</li>
+                        </ul>
+                    </div>
+                    <div class="quality-item">
+                        <h4>Manufacturing-side Preventive Measures</h4>
+                        <ul>
+                            <li>Mass production control plan</li>
+                            <li>First and last piece inspection, self-inspection</li>
+                            <li>Measurement system analysis</li>
+                            <li>Preventive maintenance and upkeep of production equipment</li>
+                            <li>Product performance and reliability testing</li>
+                        </ul>
+                    </div>
+                    <div class="quality-item">
+                        <h4>Customer Response & Recovery</h4>
+                        <ul>
+                            <li>Establish a 24-hour customer quality service hotline</li>
+                            <li>Resolve customer complaints and track results within 24 hours</li>
+                            <li>Periodic delivery quality traceability report (DPPM)</li>
+                            <li>Customer satisfaction surveys and reviews</li>
+                            <li>On-demand customer technical support</li>
+                        </ul>
+                    </div>
+                    <div class="quality-item">
+                        <h4>Continuous Improvement</h4>
+                        <ul>
+                            <li>Weekly meetings to analyze and review process anomalies</li>
+                            <li>Apply SPC to monitor critical parameters and special characteristics</li>
+                            <li>Use PDCA for continuous preventive improvement</li>
+                            <li>Use 8D methodology for problem resolution</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- 底部 -->
+        <footer class="site-footer">
+            <div class="site-footer__brand">
+                <div class="container">
+                    <div class="site-footer__brand-carousel owl-carousel owl-theme">
+                        <div class="item">
+                            <img src="/Milky/images/brand/brand-1-1.png" alt="brand image">
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <img src="/Milky/images/brand/brand-1-2.png" alt="brand image">
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <img src="/Milky/images/brand/brand-1-3.png" alt="brand image">
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <img src="/Milky/images/brand/brand-1-4.png" alt="brand image">
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <img src="/Milky/images/brand/brand-1-5.png" alt="brand image">
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <img src="/Milky/images/brand/brand-1-6.png" alt="brand image">
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <img src="/Milky/images/brand/brand-1-1.png" alt="brand image">
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <img src="/Milky/images/brand/brand-1-2.png" alt="brand image">
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <img src="/Milky/images/brand/brand-1-3.png" alt="brand image">
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <img src="/Milky/images/brand/brand-1-4.png" alt="brand image">
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <img src="/Milky/images/brand/brand-1-5.png" alt="brand image">
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <img src="/Milky/images/brand/brand-1-6.png" alt="brand image">
+                        </div><!-- /.item -->
+                    </div><!-- /.site-footer__brand-carousel -->
+                    <hr class="site-footer__brand-hr">
+                </div><!-- /.container -->
+            </div><!-- /.site-footer__brand -->
+            <div class="site-footer__upper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-5">
+                            <div class="footer-widget footer-widget__about-widget">
+                                <h2 class="footer-widget__title">Company Profile</h2><!-- /.footer-widget__title -->
+                                <p class="footer-widget__text">Fujian Milky-way Technology Co., Ltd,Established in 1985, it is a company that focuses on high and multi-layer、HDI、COB
+                                    LED、 A national high-tech enterprise specializing in the manufacturing of double-layer and single-layer circuit boards. The company is headquartered in Fujian and has a modern production base, committed to providing high-quality PCB solutions to global customers.
+                                    By introducing advanced technology, we have achieved a high degree of automation and intelligence in the production process, improving efficiency and quality. At present, the company has an M3 factory covering an area of 100000 square meters and a building area of 63187 square meters, with strong production capacity and research and development capabilities.
+                                    Our products are widely used in consumer electronics, communication, automotive, industrial control and other fields, with customers all over the world, including well-known enterprises such as Hitachi.
+                                </p><!-- /.footer-widget__text -->
+                            </div><!-- /.footer-widget -->
+                        </div><!-- /.col-lg-6 -->
+                        <div class="col-xl-3 col-lg-3">
+                            <div class="footer-widget footer-widget__links-widget">
+                                <h2 class="footer-widget__title">Quick Links</h2><!-- /.footer-widget__title -->
+                                <ul class="footer-widget__links list-unstyled">
+                                    <li>
+                                        <a href="/Milky/index E.html">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Milky/Fac E.html">Facilities </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/Milky/Honor E.html">Honors</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Milky/Business E.html">Business</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Milky/P&T E.html">Product&Technology</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Milky/Abount E.html">About US</a>
+                                    </li>
+                                </ul><!-- /.footer-widget__links -->
+                            </div><!-- /.footer-widget -->
+                        </div><!-- /.col-lg-3 -->
+                        <div class="col-xl-3 col-lg-4">
+                            <div class="footer-widget footer-widget__contact-widget">
+                                <h2 class="footer-widget__title">About Us</h2><!-- /.footer-widget__title -->
+                                <p class="footer-widget__text">Changle District, Fuzhou City, Fujian Province</p>
+                                <p class="footer-widget__text">Fujian Milky-way Technology Co., Ltd
+                                </p>
+                                <!-- /.footer-widget__text -->
+                                <p class="footer-widget__text">MW-CP-2025-08-R3 <br>
+                                </p><!-- /.footer-widget__text -->
+                                <p class="footer-widget__text">www.milky-way.com.cn
+                                    <br>
+                                </p><!-- /.footer-widget__text -->
+                            </div><!-- /.footer-widget -->
+                        </div><!-- /.col-lg-3 -->
+                    </div><!-- /.row -->
+                </div><!-- /.container -->
+            </div><!-- /.site-footer__upper -->
+            <div class="site-footer__bottom">
+                <div class="container">
+                    <div class="site-footer__copy">Fujian Milky-way Technology Co., Ltd </div>
+                    <!-- /.site-footer__copy -->
+                    <ul class="list-unstyled site-footer__links">
+                        <li><a href="#">service agreement</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul><!-- /.list-unstyled -->
+                </div><!-- /.container -->
+            </div><!-- /.site-footer__bottom -->
+        </footer><!-- /.site-footer -->
+    </div>
+    <div class="search-popup">
+        <div class="search-popup__overlay custom-cursor__overlay">
+            <div class="cursor"></div>
+            <div class="cursor-follower"></div>
+        </div><!-- /.search-popup__overlay -->
+        <div class="search-popup__inner">
+            <form action="#" class="search-popup__form">
+                <input type="text" name="search" placeholder="Type here to Search....">
+                <button type="submit"><i class="indext-icon-Search"></i></button>
+            </form>
+        </div><!-- /.search-popup__inner -->
+    </div><!-- /.search-popup -->
+    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="indext-icon-arrow-up"></i></a>
+    <script src="/Milky/js/jquery.min.js"></script>
+    <script src="/Milky/js/bootstrap.bundle.min.js"></script>
+    <script src="/Milky/js/bootstrap-datepicker.min.js"></script>
+    <script src="/Milky/js/bootstrap-select.min.js"></script>
+    <script src="/Milky/js/isotope.js"></script>
+    <script src="/Milky/js/jquery.counterup.min.js"></script>
+    <script src="/Milky/js/jquery.magnific-popup.min.js"></script>
+    <script src="/Milky/js/jquery.validate.min.js"></script>
+    <script src="/Milky/js/owl.carousel.min.js"></script>
+    <script src="/Milky/js/TweenMax.min.js"></script>
+    <script src="/Milky/js/waypoints.min.js"></script>
+    <script src="/Milky/js/wow.min.js"></script>
+
+    <script src="/Milky/js/nouislider.js"></script>
+    <script src="/Milky/js/jquery.bootstrap-touchspin.min.js"></script>
+    <script src="/Milky/js/theme.js"></script>
+    <script>
+        // 简单的滚动动画效果
+        document.addEventListener('DOMContentLoaded', function () {
+            // 为产能图表添加动画效果
+            const bars = document.querySelectorAll('.single-bar, .multi-bar');
+            bars.forEach(bar => {
+                const originalWidth = bar.style.width;
+                bar.style.width = '0%';
+
+                setTimeout(() => {
+                    bar.style.width = originalWidth;
+                }, 300);
+            });
+            // 移动端菜单切换
+            document.querySelector('.menu-toggle').addEventListener('click', function () {
+                const navUl = document.querySelector('nav ul');
+                navUl.classList.toggle('show');
+            });
+
+            // 滚动动画
+            // const animatedElements = document.querySelectorAll('.scroll-animate');
+
+            // const observer = new IntersectionObserver((entries) => {
+            //     entries.forEach(entry => {
+            //         if (entry.isIntersecting) {
+            //             entry.target.classList.add('visible');
+            //         }
+            //     });
+            // }, { threshold: 0.1 });
+
+            // animatedElements.forEach(el => observer.observe(el));
+
+            // 导航栏滚动效果
+            window.addEventListener('scroll', function () {
+                const header = document.querySelector('header');
+                if (window.scrollY > 100) {
+                    header.style.boxShadow = '0 4px 10px rgba(0,0,0,0.2)';
+                } else {
+                    header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Facilities</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/Milky/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Milky/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Milky/images/favicon/favicon-16x16.png">
+    <!-- <link rel="manifest" href="images/favicon/site.webmanifest"> -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CRubik:400,400i,500,700,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/Milky/css/animate.css">
+    <link rel="stylesheet" href="/Milky/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Milky/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="/Milky/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="/Milky/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/Milky/css/hover-min.css">
+    <link rel="stylesheet" href="/Milky/css/magnific-popup.css">
+    <link rel="stylesheet" href="/Milky/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/Milky/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/Milky/plugins/indext-icons/style.css">
+    <link rel="stylesheet" href="/Milky/css/nouislider.css">
+    <link rel="stylesheet" href="/Milky/css/jquery.bootstrap-touchspin.min.css">
+
+    <link rel="stylesheet" href="/Milky/css/style.css">
+    <link rel="stylesheet" href="/Milky/css/responsive.css">
+    <style>
+        /* 表格右上角圆角 */
+        table thead tr:first-child th {
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+            border-left: none;
+            border-right:none ;
+            border-top:none 
+
+        }
+        .project-one__single {
+            width: 100%;
+        }
+
+        /* 实验室网格样式 */
+        .c_1 {
+            margin: 0 20%;
+            max-width: 1200px;
+        }
+
+        .lab-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .lab-card {
+            background: #f9f9f9;
+            border-radius: 6px;
+            padding: 15px;
+            border-left: 4px solid #c00;
+        }
+
+        .lab-card h4 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #c00;
+        }
+
+        .lab-card ul {
+            list-style: none;
+        }
+
+        .lab-card li {
+            padding: 5px 0;
+            border-bottom: 1px dashed #e0e0e0;
+            position: relative;
+            padding-left: 15px;
+        }
+
+        .lab-card li:before {
+            content: '•';
+            color: #c00;
+            position: absolute;
+            left: 0;
+        }
+
+        .lab-card li:last-child {
+            border-bottom: none;
+        }
+
+        /* 表格样式 */
+        /* .table-container {
+                padding: 20px;
+            } */
+        .table-container{
+            overflow-x: auto;
+        }
+
+        .tech-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .tech-table th {
+            background: #c00;
+            color: white;
+            padding: 12px 15px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        .tech-table td {
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        .tech-table tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+
+        .tech-table tr:hover {
+            background: #f0f0f0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header class="site-header site-header__header-one ">
+            <nav class="navbar navbar-expand-lg navbar-light header-navigation stricky">
+                <!-- 头部导航栏 -->
+                <div class="container clearfix">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="logo-box">
+                        <a class="navbar-brand" href="index-3.html">
+                            <img src="/Milky/images/logo.png" width="185" class="main-logo" alt="Awesome Image" />
+                        </a>
+                        <button class="menu-toggler" data-target=".main-navigation">
+                            <span class="fa fa-bars"></span>
+                        </button>
+                    </div><!-- /.logo-box -->
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="main-navigation">
+                        <ul class=" navigation-box @@extra_class">
+                            <li>
+                                <a href="/Milky/index E.html">Home</a>
+                            </li>
+                            <li  class="current">
+                                <a href="/Milky/Fac E.html">Facilities </a>
+                            </li>
+                            <li>
+                                <a href="/Milky/Honor E.html">Honors</a>
+                            </li>
+                            <li>
+                                <a href="/Milky/Business E.html">Business</a>
+                            </li>
+                            <li>
+                                <a href="/Milky/P&T E.html">Product&Technology</a>
+                            </li>
+                            <li>
+                                <a href="/Milky/Abount E.html">About US</a>
+                            </li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container -->
+            </nav>
+        </header><!-- /.site-header -->
+        <section class="inner-banner">
+            <div class="container">
+                <h2 class="inner-banner__title">Facilities & Equipment</h2><!-- /.inner-banner__title -->
+            </div><!-- /.container -->
+        </section><!-- /.inner-banner -->
+        <section class="project-one project-one__home-two">
+            <div class="container-fluid">
+                <div class="block-title" style="text-align: center;">
+                    <h3 class="block-title__title">Intelligent Equipment Showcase <br>
+                        <h2>Fujian Milky-way Technology is equipped with advanced manufacturing equipment and standardized laboratories to ensure products meet international standards.</h2>
+                        <br>
+                        <!-- /.block-title__base -->
+                        <!-- /.block-title__bold -->
+                    </h3><!-- /.block-title__title -->
+                </div><!-- /.block-title -->
+                <div class="project-two__carousel owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片1.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">Inner-layer Coating Line</a></h2><!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片2.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">Inner-layer LDI Exposure Line</a></h2>
+                                <!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片7.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">OPE + Browning Line</a></h2><!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片8.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">Reflow Line + Press Unit</a></h2><!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片9.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">Laser Drilling Machine</a></h2><!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片10.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">Mechanical Drilling Machine</a></h2><!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片11.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">Horizontal PTH Line</a></h2><!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片12.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">Full-board VCP Plating Line</a></h2><!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片13.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">Outer-layer LDI Exposure Line</a></h2>
+                                <!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片14.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">Vacuum Etching + Online AOI</a></h2>
+                                <!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片15.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">Soldermask LED Exposure Automatic Line</a></h2>
+                                <!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片16.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">Soldermask DI Exposure Machine</a></h2><!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片22.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">Laser Repair Machine</a></h2><!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片23.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">VCP Via-filling Line</a></h2><!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片25.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">Soldermask AVI Machine</a></h2><!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片26.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">Inkjet Marking Line</a></h2><!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片27.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">Forming Machine</a></h2><!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片28.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">Automatic V-Cut Machine</a></h2>
+                                <!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片29.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">8x Density Universal Tester</a></h2>
+                                <!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片30.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">12x Density Universal Tester</a></h2>
+                                <!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片31.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">OSP Line</a></h2><!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片32.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">Tin Plating Line</a></h2><!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片33.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">Appearance Inspection Machine</a></h2><!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="project-one__single">
+                            <img src="/Milky/images/图片34.jpg" alt="">
+                            <div class="project-one__content">
+                                <h2 class="project-one__title"><a href="#">QR Code Engraving Machine</a></h2><!-- /.project-one__title -->
+                            </div><!-- /.project-one__content -->
+                        </div><!-- /.project-one__single -->
+                    </div><!-- /.item -->
+                </div><!-- /.project-one__carousel owl-carousel owl-theme -->
+            </div><!-- /.container -->
+        </section><!-- /.project-one -->
+        <!-- 标准化实验室 -->
+        <section>
+            <div class="c_1">
+                <div class="section-header">
+                    <div class="block-title" style="text-align: center;">
+                        <h3 class="block-title__title" style="text-align: center;">Standardized Laboratory<br>
+                            <h2 style="text-align: center;">Fujian Milky-way Technology has a comprehensive standardized laboratory equipped with advanced testing instruments to ensure product quality meets international standards.</h2>
+                            <br>
+                            <!-- /.block-title__base -->
+                            <!-- /.block-title__bold -->
+                        </h3><!-- /.block-title__title -->
+                    </div><!-- /.block-title -->
+                </div>
+                <div class="lab-grid">
+                    <div class="lab-card">
+                        <h4>Electrical Lab</h4>
+                        <ul>
+                            <li>Vector Network Analyzer</li>
+                            <li>Metallographic Microscope</li>
+                            <li>Analytical Balance</li>
+                            <li>Dielectric Withstand / Insulation Tester</li>
+                            <li>Peel Strength Tester</li>
+                            <li>Coating Thickness Gauge</li>
+                        </ul>
+                    </div>
+
+                    <div class="lab-card">
+                        <h4>Environmental Lab</h4>
+                        <ul>
+                            <li>Thermal Shock Chamber</li>
+                            <li>Temperature & Humidity Chamber</li>
+                            <li>Gelation Test Chamber</li>
+                            <li>Needle Flame Test Chamber</li>
+                            <li>Glow Wire Tester</li>
+                            <li>Leakage and Tracking Tester</li>
+                        </ul>
+                    </div>
+
+                    <div class="lab-card">
+                        <h4>Instrument Room</h4>
+                        <ul>
+                            <li>Ionic Contamination Tester</li>
+                            <li>RoHS Tester v1.0</li>
+                            <li>RoHS Tester v2.0</li>
+                            <li>Atomic Absorption Spectrometer</li>
+                        </ul>
+                    </div>
+
+                    <div class="lab-card">
+                        <h4>Cross-section / Sample Prep Room</h4>
+                        <ul>
+                            <li>Fume Hood</li>
+                            <li>Automated Section Sampling Machine</li>
+                            <li>Vacuum Drying Oven</li>
+                            <li>Double-disc Dual-control Grinder/Polisher</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Equipment List -->
+        <section class="content-section">
+            <div class="section-header">
+                <div class="block-title" style="text-align: center;">
+                    <h3 class="block-title__title" style="text-align: center;">Equipment List<br>
+                        <h2 style="text-align: center;">Below is a detailed list of the main production equipment at Fujian Milky-way Technology, covering all process stages.</h2>
+                        <br>
+                        <!-- /.block-title__base -->
+                        <!-- /.block-title__bold -->
+                    </h3><!-- /.block-title__title -->
+                </div><!-- /.block-title -->
+            </div>
+            <div class="table-container">
+                <h3 style="margin-bottom: 28px;">Circuit Process Equipment</h3>
+                <table class="tech-table">
+                    <thead>
+                        <tr>
+                            <th>Equipment</th>
+                            <th>Brand</th>
+                            <th>Origin</th>
+                            <th>Capability</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Inner-layer Coating Machine</td>
+                            <td>Qunyi</td>
+                            <td>Taiwan</td>
+                            <td>Film thickness 5–35 μm, uniformity 10±2 μm</td>
+                        </tr>
+                        <tr>
+                            <td>LDI Exposure Machine</td>
+                            <td>Xinge</td>
+                            <td>China</td>
+                            <td>Registration accuracy ±12 μm, L/S: 30/30 μm</td>
+                        </tr>
+                        <tr>
+                            <td>Vacuum Etching Line</td>
+                            <td>Yuzhou</td>
+                            <td>China</td>
+                            <td>L/S: 40/40 μm</td>
+                        </tr>
+                        <tr>
+                            <td>Online AOI</td>
+                            <td>Yimeizhi</td>
+                            <td>China</td>
+                            <td>L/S: 40/40 μm</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 style="margin-bottom: 28px;">Lamination / Press Process Equipment</h3>
+                <table class="tech-table">
+                    <thead>
+                        <tr>
+                            <th>Equipment</th>
+                            <th>Brand</th>
+                            <th>Origin</th>
+                            <th>Capability</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Press</td>
+                            <td>Hong'an</td>
+                            <td>China</td>
+                            <td>Cu ≥ 12 μm</td>
+                        </tr>
+                        <tr>
+                            <td>Reflow Line</td>
+                            <td>Zhuizhuo</td>
+                            <td>China</td>
+                            <td>Stacking accuracy ±1.5 mm</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">Grinding Line + X-ray Drilling</td>
+                            <td>Hongsheng</td>
+                            <td>China</td>
+                            <td>Grinding tolerance: parallel ±0.3 mm, diagonal ±0.5 mm</td>
+                        </tr>
+                        <tr>
+                            <td>Haoshuo</td>
+                            <td>China</td>
+                            <td>Accuracy ±10 μm</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 style="margin-bottom: 28px;">Drilling Process Equipment</h3>
+                <table class="tech-table">
+                    <thead>
+                        <tr>
+                            <th>Equipment</th>
+                            <th>Brand</th>
+                            <th>Origin</th>
+                            <th>Capability</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mechanical Drilling Machine</td>
+                            <td>Weizheng</td>
+                            <td>China</td>
+                            <td>Equipment accuracy ±25 μm</td>
+                        </tr>
+                        <tr>
+                            <td>Laser Drilling Machine</td>
+                            <td>Mitsubishi</td>
+                            <td>Japan</td>
+                            <td>Positioning accuracy ±10 μm, min Φ 50 μm</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 style="margin-bottom: 28px;">Plating Process Equipment</h3>
+                <table class="tech-table">
+                    <thead>
+                        <tr>
+                            <th>Equipment</th>
+                            <th>Brand</th>
+                            <th>Origin</th>
+                            <th>Capability</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>VCP Via-filling Plating</td>
+                            <td>Dongwei</td>
+                            <td>China</td>
+                            <td rowspan="2">Board thickness: min 0.3 mm; uniformity within ±10%; recess max 10 μm</td>
+                        </tr>
+                        <tr>
+                            <td>VCP Full-board Plating</td>
+                            <td>Yuzhou</td>
+                            <td>China</td>
+                        </tr>
+                        <tr>
+                            <td>Vertical Desmear & Copper Deposition</td>
+                            <td>Jingming</td>
+                            <td>Taiwan</td>
+                            <td rowspan="2">Board thickness ≥ 0.3 mm; backlight ≥ 9.5 (grade)</td>
+                        </tr>
+                        <tr>
+                            <td>Horizontal Desmear & Copper Deposition</td>
+                            <td>Yuzhou</td>
+                            <td>China</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 style="margin-bottom: 28px;">Soldermask Process Equipment</h3>
+                <table class="tech-table">
+                    <thead>
+                        <tr>
+                            <th>Equipment</th>
+                            <th>Brand</th>
+                            <th>Origin</th>
+                            <th>Capability</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Three-machine Continuous Printing Line</td>
+                            <td>Hengda Youchuang</td>
+                            <td>China</td>
+                            <td>Conveyor reciprocating registration accuracy ±0.005 mm</td>
+                        </tr>
+                        <tr>
+                            <td>Exposure Machine (CCD LED)</td>
+                            <td>Kesi</td>
+                            <td>China</td>
+                            <td>Registration accuracy ±12.5 μm</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">DI Exposure Machine</td>
+                            <td>Wangping</td>
+                            <td>Japan</td>
+                            <td>Registration accuracy ±10 μm</td>
+                        </tr>
+                        <tr>
+                            <td>Yuanzhuo</td>
+                            <td>China</td>
+                            <td>Registration accuracy ±12 μm</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 style="margin-bottom: 28px;">Test Process Equipment</h3>
+                <table class="tech-table">
+                    <thead>
+                        <tr>
+                            <th>Equipment</th>
+                            <th>Brand</th>
+                            <th>Origin</th>
+                            <th>Capability</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>4x Density Universal Tester</td>
+                            <td>Kaima</td>
+                            <td>China</td>
+                            <td>Points: 81,920; min pin 0.15 mm</td>
+                        </tr>
+                        <tr>
+                            <td>8x Density Universal Tester</td>
+                            <td>Kaima</td>
+                            <td>China</td>
+                            <td>Points: 221,184; min pin 0.07 mm</td>
+                        </tr>
+                        <tr>
+                            <td>12x Density Universal Tester</td>
+                            <td>Kaima</td>
+                            <td>China</td>
+                            <td>Points: 315,392; min pin 0.07 mm</td>
+                        </tr>
+                        <tr>
+                            <td>Inductance Tester</td>
+                            <td>Wangtongda</td>
+                            <td>China</td>
+                            <td>Test frequency: 10 Hz–1 MHz</td>
+                        </tr>
+                        <tr>
+                            <td>Flying Probe Tester</td>
+                            <td>Zhongboxin</td>
+                            <td>China</td>
+                            <td>Min board thickness 0.2 mm; min pad 0.05 mm</td>
+                        </tr>
+                        <tr>
+                            <td>AVI Inspection Machine</td>
+                            <td>Yimeizhi</td>
+                            <td>China</td>
+                            <td>Resolution 10 μm</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 style="margin-top: 28px;">Other Process Equipment</h3>
+                <table class="tech-table">
+                    <thead>
+                        <tr>
+                            <th>Process</th>
+                            <th>Equipment</th>
+                            <th>Brand</th>
+                            <th>Origin</th>
+                            <th>Capability</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Marking</td>
+                            <td>Automatic Inkjet Marking Line</td>
+                            <td>Jinxin</td>
+                            <td>China</td>
+                            <td>Registration accuracy ±35 μm</td>
+                        </tr>
+                        <tr>
+                            <td>Forming</td>
+                            <td>Routing Machine</td>
+                            <td>Weizheng</td>
+                            <td>China</td>
+                            <td>Positioning accuracy ±0.01 mm; forming accuracy ±0.05 mm</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">Surface Treatment</td>
+                            <td>OSP</td>
+                            <td>Yuzhou</td>
+                            <td>China</td>
+                            <td>Aspect ratio 8:1</td>
+                        </tr>
+                        <tr>
+                            <td>Tin Plating</td>
+                            <td>Yuzhou</td>
+                            <td>China</td>
+                            <td>Aspect ratio 8:1 (blind via 1:1)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <footer class="site-footer">
+            <div class="site-footer__brand">
+                <div class="container">
+                    <div class="site-footer__brand-carousel owl-carousel owl-theme">
+                        <div class="item">
+                            <img src="/Milky/images/brand/brand-1-1.png" alt="brand image">
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <img src="/Milky/images/brand/brand-1-2.png" alt="brand image">
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <img src="/Milky/images/brand/brand-1-3.png" alt="brand image">
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <img src="/Milky/images/brand/brand-1-4.png" alt="brand image">
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <img src="/Milky/images/brand/brand-1-5.png" alt="brand image">
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <img src="/Milky/images/brand/brand-1-6.png" alt="brand image">
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <img src="/Milky/images/brand/brand-1-1.png" alt="brand image">
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <img src="/Milky/images/brand/brand-1-2.png" alt="brand image">
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <img src="/Milky/images/brand/brand-1-3.png" alt="brand image">
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <img src="/Milky/images/brand/brand-1-4.png" alt="brand image">
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <img src="/Milky/images/brand/brand-1-5.png" alt="brand image">
+                        </div><!-- /.item -->
+                        <div class="item">
+                            <img src="/Milky/images/brand/brand-1-6.png" alt="brand image">
+                        </div><!-- /.item -->
+                    </div><!-- /.site-footer__brand-carousel -->
+                    <hr class="site-footer__brand-hr">
+                </div><!-- /.container -->
+            </div><!-- /.site-footer__brand -->
+            <div class="site-footer__upper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-5">
+                            <div class="footer-widget footer-widget__about-widget">
+                                <h2 class="footer-widget__title">Company Profile</h2><!-- /.footer-widget__title -->
+                                <p class="footer-widget__text">Fujian Milky-way Technology Co., Ltd,Established in 1985, it is a company that focuses on high and multi-layer、HDI、COB
+                                    LED、 A national high-tech enterprise specializing in the manufacturing of double-layer and single-layer circuit boards. The company is headquartered in Fujian and has a modern production base, committed to providing high-quality PCB solutions to global customers.
+                                    By introducing advanced technology, we have achieved a high degree of automation and intelligence in the production process, improving efficiency and quality. At present, the company has an M3 factory covering an area of 100000 square meters and a building area of 63187 square meters, with strong production capacity and research and development capabilities.
+                                    Our products are widely used in consumer electronics, communication, automotive, industrial control and other fields, with customers all over the world, including well-known enterprises such as Hitachi.
+                                </p><!-- /.footer-widget__text -->
+                            </div><!-- /.footer-widget -->
+                        </div><!-- /.col-lg-6 -->
+                        <div class="col-xl-3 col-lg-3">
+                            <div class="footer-widget footer-widget__links-widget">
+                                <h2 class="footer-widget__title">Quick Links</h2><!-- /.footer-widget__title -->
+                                <ul class="footer-widget__links list-unstyled">
+                                    <li>
+                                        <a href="/Milky/index E.html">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Milky/Fac E.html">Facilities </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="/Milky/Honor E.html">Honors</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Milky/Business E.html">Business</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Milky/P&T E.html">Product&Technology</a>
+                                    </li>
+                                    <li>
+                                        <a href="/Milky/Abount E.html">About US</a>
+                                    </li>
+                                </ul><!-- /.footer-widget__links -->
+                            </div><!-- /.footer-widget -->
+                        </div><!-- /.col-lg-3 -->
+                        <div class="col-xl-3 col-lg-4">
+                            <div class="footer-widget footer-widget__contact-widget">
+                                <h2 class="footer-widget__title">About Us</h2><!-- /.footer-widget__title -->
+                                <p class="footer-widget__text">Changle District, Fuzhou City, Fujian Province</p>
+                                <p class="footer-widget__text">Fujian Milky-way Technology Co., Ltd
+                                </p>
+                                <!-- /.footer-widget__text -->
+                                <p class="footer-widget__text">MW-CP-2025-08-R3 <br>
+                                </p><!-- /.footer-widget__text -->
+                                <p class="footer-widget__text">www.milky-way.com.cn
+                                    <br>
+                                </p><!-- /.footer-widget__text -->
+                            </div><!-- /.footer-widget -->
+                        </div><!-- /.col-lg-3 -->
+                    </div><!-- /.row -->
+                </div><!-- /.container -->
+            </div><!-- /.site-footer__upper -->
+            <div class="site-footer__bottom">
+                <div class="container">
+                    <div class="site-footer__copy">Fujian Milky-way Technology Co., Ltd </div>
+                    <!-- /.site-footer__copy -->
+                    <ul class="list-unstyled site-footer__links">
+                        <li><a href="#">service agreement</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul><!-- /.list-unstyled -->
+                </div><!-- /.container -->
+            </div><!-- /.site-footer__bottom -->
+        </footer><!-- /.site-footer -->
+    </div><!-- /.page-wrapper -->
+    <div class="search-popup">
+        <div class="search-popup__overlay custom-cursor__overlay">
+            <div class="cursor"></div>
+            <div class="cursor-follower"></div>
+        </div><!-- /.search-popup__overlay -->
+        <div class="search-popup__inner">
+            <form action="#" class="search-popup__form">
+                <input type="text" name="search" placeholder="Type here to Search....">
+                <button type="submit"><i class="indext-icon-Search"></i></button>
+            </form>
+        </div><!-- /.search-popup__inner -->
+    </div><!-- /.search-popup -->
+    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="indext-icon-arrow-up"></i></a>
+    <script src="/Milky/js/jquery.min.js"></script>
+    <script src="/Milky/js/bootstrap.bundle.min.js"></script>
+    <script src="/Milky/js/bootstrap-datepicker.min.js"></script>
+    <script src="/Milky/js/bootstrap-select.min.js"></script>
+    <script src="/Milky/js/isotope.js"></script>
+    <script src="/Milky/js/jquery.counterup.min.js"></script>
+    <script src="/Milky/js/jquery.magnific-popup.min.js"></script>
+    <script src="/Milky/js/jquery.validate.min.js"></script>
+    <script src="/Milky/js/owl.carousel.min.js"></script>
+    <script src="/Milky/js/TweenMax.min.js"></script>
+    <script src="/Milky/js/waypoints.min.js"></script>
+    <script src="/Milky/js/wow.min.js"></script>
+
+    <script src="/Milky/js/nouislider.js"></script>
+    <script src="/Milky/js/jquery.bootstrap-touchspin.min.js"></script>
+    <script src="/Milky/js/theme.js"></script>
+
+</body>
+
+</html>
